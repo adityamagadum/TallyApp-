@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><title>InvoicePro</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container": "#eeeeee", "on-secondary-fixed-variant": "#46464e", "inverse-surface": "#2f3131", "tertiary": "#000000", "surface-tint": "#5f5e5e", "background": "#f9f9f9", "on-tertiary-fixed": "#191c1f", "surface-container-high": "#e8e8e8", "tertiary-fixed": "#e0e2e6", "on-tertiary-fixed-variant": "#44474a", "secondary": "#5d5e66", "on-primary-fixed": "#1c1b1b", "surface-container-highest": "#e2e2e2", "tertiary-container": "#191c1f", "on-primary": "#ffffff", "tertiary-fixed-dim": "#c4c7ca", "inverse-on-surface": "#f0f1f1", "outline": "#747878", "on-secondary-fixed": "#1a1b22", "on-error-container": "#93000a", "inverse-primary": "#c8c6c5", "surface-dim": "#dadada", "on-secondary": "#ffffff", "primary-fixed": "#e5e2e1", "surface-container-lowest": "#ffffff", "outline-variant": "#c4c7c7", "on-surface": "#1a1c1c", "surface-container-low": "#f3f3f4", "primary-container": "#1c1b1b", "primary-fixed-dim": "#c8c6c5", "secondary-fixed-dim": "#c6c5cf", "on-tertiary": "#ffffff", "error-container": "#ffdad6", "surface-bright": "#f9f9f9", "on-surface-variant": "#444748", "on-primary-container": "#858383", "on-error": "#ffffff", "on-secondary-container": "#63646c", "error": "#ba1a1a", "primary": "#000000", "surface-variant": "#e2e2e2", "on-primary-fixed-variant": "#474646", "secondary-container": "#e3e1ec", "on-tertiary-container": "#818488", "on-background": "#1a1c1c", "surface": "#f9f9f9", "secondary-fixed": "#e3e1ec" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-md": "0.75rem", "space-xl": "1.5rem", "margin": "1rem", "space-lg": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "gutter": "0.75rem" }, fontFamily: { "label-md": ["Inter"], "body-sm": ["Inter"], "body-md": ["Inter"], "label-lg": ["Inter"], "headline-sm": ["Inter"], "headline-md": ["Inter"], "headline-lg": ["Inter"], "label-sm": ["Inter"], "body-lg": ["Inter"] }, fontSize: { "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" }], "body-lg": ["15px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "500" }] } } } }</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}.pb-safe{padding-bottom:max(env(safe-area-inset-bottom,0px),1rem);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-background font-body-md text-body-md text-on-background antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-6 px-margin flex items-center justify-between text-on-surface select-none"><span class="font-label-sm text-label-sm font-semibold tracking-tight">9:41</span><div class="flex items-center gap-space-xs text-on-surface"><span class="material-symbols-outlined text-[15px]">signal_cellular_alt</span><span class="material-symbols-outlined text-[15px]">wifi</span><span class="material-symbols-outlined text-[15px]">battery_full</span></div></div><div class="h-14 px-margin flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Go back" class="w-11 h-11 -ml-2 flex items-center justify-center text-on-surface hover:text-on-surface-variant transition-colors rounded-full" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="InvoicePro Logo" class="h-7 w-auto object-contain hidden" src="https://lh3.googleusercontent.com/aida/ALJJyrCWWQC7XYThF5m37nV7bn_CVCTJ3maSoJZ1PS3bYC5z6sJMjz0bQVcHdqnhkjoIU0wsXbAtHaqf9Mk6Tidy2cebhbBl-VwbOSThfcSkYj6lLsYoiO2BAMMz8P-MDQa7Gi0I1Wno321bNcQXC_qmPOQRGcP2CzIJuMv_8w_A3ZGFWEZWq7gjBP1jIOLo5V1aSAwlPzuCD3ZrXAxhiSacDvOhJJGJhnCvVxixsisJhi1h"/><h1 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight truncate max-w-[200px]">Create Invoice</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Context action" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors rounded-full"><span class="material-symbols-outlined text-[22px]">more_vert</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-20 pb-safe bg-surface"><div class="flex flex-col w-full pb-24">
+<!-- Multi-Step Progress Stepper -->
+<div class="px-margin pt-2 pb-5 bg-surface">
+<div class="flex items-center justify-between relative max-w-xs mx-auto">
+<!-- Background Connecting Line Track -->
+<div class="absolute left-6 right-6 top-3 h-[2px] bg-primary"></div>
+<!-- Step 1: Details (Completed) -->
+<div class="flex flex-col items-center relative z-10">
+<div class="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[14px] font-bold">check</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface mt-1.5 font-semibold">Details</span>
+</div>
+<!-- Step 2: Items (Completed) -->
+<div class="flex flex-col items-center relative z-10">
+<div class="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-on-primary">
+<span class="material-symbols-outlined text-[14px] font-bold">check</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface mt-1.5 font-semibold">Items</span>
+</div>
+<!-- Step 3: Review (Active) -->
+<div class="flex flex-col items-center relative z-10">
+<div class="w-6 h-6 rounded-full bg-primary flex items-center justify-center text-on-primary shadow-sm ring-4 ring-surface">
+<span class="font-label-sm text-label-sm text-on-primary font-bold">3</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary mt-1.5 font-bold">Review</span>
+</div>
+</div>
+</div>
+<!-- Main Review & Summary Content -->
+<div class="px-margin flex flex-col space-y-4">
+<!-- Section Heading -->
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Bill Summary</h2>
+<span class="font-label-md text-label-md text-on-surface-variant bg-surface-container-high px-2.5 py-0.5 rounded-full">GST/26-27/032</span>
+</div>
+<!-- Financial Calculation Card -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col space-y-3">
+<!-- Line 1: Items Count & Total -->
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="font-body-md text-body-md">Items (2)</span>
+<button class="w-5 h-5 flex items-center justify-center text-on-surface-variant hover:text-on-surface" id="view-items-btn" type="button">
+<span class="material-symbols-outlined text-[16px]">info</span>
+</button>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface tabular-nums">₹8,540.00</span>
+</div>
+<!-- Item Preview Drawer / Expandable Mini-list -->
+<div class="hidden bg-surface-container-low rounded-lg p-2.5 space-y-2" id="item-preview-list">
+<div class="flex justify-between items-center text-on-surface-variant font-label-md text-label-md">
+<span class="truncate pr-2">1. VB001253 Bracket 2 LH/RH (60 Nos)</span>
+<span class="tabular-nums font-medium text-on-surface">₹3,150.00</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant font-label-md text-label-md">
+<span class="truncate pr-2">2. Small E Clip (1,100 Nos)</span>
+<span class="tabular-nums font-medium text-on-surface">₹5,390.00</span>
+</div>
+</div>
+<!-- Line 2: IGST -->
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-body-md text-body-md">IGST (18%)</span>
+<span class="font-label-lg text-label-lg text-on-surface tabular-nums">₹1,537.20</span>
+</div>
+<!-- Line 3: Round Off -->
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="font-body-md text-body-md">Round Off</span>
+<span class="font-label-lg text-label-lg text-on-surface tabular-nums">- ₹0.20</span>
+</div>
+<!-- Subtle Visual Divider using tonal background slot -->
+<div class="h-[1px] w-full bg-surface-container-high my-1"></div>
+<!-- Total Row -->
+<div class="flex items-baseline justify-between pt-1">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">Total</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Inclusive of all taxes</span>
+</div>
+<span class="font-headline-lg text-headline-lg text-primary font-bold tabular-nums">₹10,077.00</span>
+</div>
+</div>
+<!-- Amount in Words Card -->
+<div class="bg-surface-container-low rounded-xl p-4 flex flex-col space-y-1">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">translate</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Amount in Words</span>
+</div>
+<p class="font-body-lg text-body-lg text-on-surface font-semibold pl-6">
+        INR Ten Thousand Seventy Seven Only
+      </p>
+</div>
+<!-- Interactive Accordions -->
+<div class="flex flex-col space-y-2.5 pt-1">
+<!-- Accordion 1: Additional Details -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all">
+<button class="w-full h-13 px-4 py-3.5 flex items-center justify-between text-left hover:bg-surface-container-low/50 transition-colors" onclick="toggleAccordion('acc-details', 'icon-details')" type="button">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[18px]">receipt_long</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface">Additional Details</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px] transition-transform duration-200" id="icon-details">chevron_right</span>
+</button>
+<div class="hidden px-4 pb-4 pt-1 flex flex-col space-y-2 bg-surface-container-lowest" id="acc-details">
+<div class="flex justify-between items-center py-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Buyer PO No.</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">GOA/26401058</span>
+</div>
+<div class="flex justify-between items-center py-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">PO Date</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">06-Nov-2026</span>
+</div>
+<div class="flex justify-between items-center py-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Delivery Mode</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Road Transport (Surface)</span>
+</div>
+</div>
+</div>
+<!-- Accordion 2: Bank Details -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all">
+<button class="w-full h-13 px-4 py-3.5 flex items-center justify-between text-left hover:bg-surface-container-low/50 transition-colors" onclick="toggleAccordion('acc-bank', 'icon-bank')" type="button">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[18px]">account_balance</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface">Bank Details</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px] transition-transform duration-200" id="icon-bank">chevron_right</span>
+</button>
+<div class="hidden px-4 pb-4 pt-1 flex flex-col space-y-2 bg-surface-container-lowest" id="acc-bank">
+<div class="flex justify-between items-center py-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Bank Name</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Karnataka Bank Ltd</span>
+</div>
+<div class="flex justify-between items-center py-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">Account No.</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold tracking-wide">1922000100047401</span>
+</div>
+<div class="flex justify-between items-center py-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">IFSC Code</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">KARB0000192</span>
+</div>
+</div>
+</div>
+<!-- Accordion 3: Declaration -->
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm transition-all">
+<button class="w-full h-13 px-4 py-3.5 flex items-center justify-between text-left hover:bg-surface-container-low/50 transition-colors" onclick="toggleAccordion('acc-declaration', 'icon-declaration')" type="button">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface">Declaration</span>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[20px] transition-transform duration-200" id="icon-declaration">chevron_right</span>
+</button>
+<div class="hidden px-4 pb-4 pt-1 bg-surface-container-lowest" id="acc-declaration">
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            We declare that this invoice shows the actual price of the goods described and that all particulars are true and correct. Subject to Dharwad jurisdiction.
+          </p>
+</div>
+</div>
+</div>
+</div>
+<!-- Sticky Bottom Navigation Buttons -->
+<div class="fixed bottom-0 left-0 right-0 p-margin bg-surface/95 backdrop-blur-md shadow-lg z-40 pb-safe">
+<div class="flex items-center gap-3 max-w-lg mx-auto w-full">
+<!-- Back Button -->
+<button class="flex-1 h-12 rounded-lg bg-surface-container-lowest text-on-surface font-label-lg text-label-lg font-semibold flex items-center justify-center gap-1.5 shadow-sm active:bg-surface-container transition-colors" onclick="history.back()" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Back</span>
+</button>
+<!-- Primary Action: Generate Invoice -->
+<button class="flex-[1.5] h-12 rounded-lg bg-primary text-on-primary font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 shadow-md active:bg-neutral-800 transition-colors" id="generate-invoice-btn" type="button">
+<span class="material-symbols-outlined text-[20px]">description</span>
+<span>Generate Invoice</span>
+</button>
+</div>
+</div>
+<!-- Interactive Modal Feedback on Generate -->
+<div class="fixed inset-0 bg-primary/40 backdrop-blur-xs z-50 hidden flex items-center justify-center p-6" id="success-modal">
+<div class="bg-surface-container-lowest rounded-2xl p-6 w-full max-w-sm flex flex-col items-center text-center shadow-xl">
+<div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-on-primary mb-4">
+<span class="material-symbols-outlined text-[32px]">check_circle</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Invoice Created!</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 mb-6">GST/26-27/032 has been recorded and ready for dispatch or print.</p>
+<div class="flex flex-col w-full gap-2">
+<button class="w-full h-11 bg-primary text-on-primary rounded-lg font-label-lg text-label-lg font-semibold" onclick="document.getElementById('success-modal').classList.add('hidden')">View Preview</button>
+<button class="w-full h-11 bg-surface-container-low text-on-surface rounded-lg font-label-lg text-label-lg font-semibold" onclick="document.getElementById('success-modal').classList.add('hidden')">Back to Dashboard</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function toggleAccordion(contentId, iconId) {
+    const content = document.getElementById(contentId);
+    const icon = document.getElementById(iconId);
+    if (!content || !icon) return;
+
+    if (content.classList.contains('hidden')) {
+      content.classList.remove('hidden');
+      icon.classList.add('rotate-90');
+    } else {
+      content.classList.add('hidden');
+      icon.classList.remove('rotate-90');
+    }
+  }
+
+  // Toggle item breakdown
+  const viewItemsBtn = document.getElementById('view-items-btn');
+  const itemsList = document.getElementById('item-preview-list');
+  if (viewItemsBtn && itemsList) {
+    viewItemsBtn.addEventListener('click', () => {
+      itemsList.classList.toggle('hidden');
+    });
+  }
+
+  // Generate invoice modal trigger
+  const generateBtn = document.getElementById('generate-invoice-btn');
+  const modal = document.getElementById('success-modal');
+  if (generateBtn && modal) {
+    generateBtn.addEventListener('click', () => {
+      modal.classList.remove('hidden');
+    });
+  }
+</script></main></body></html>

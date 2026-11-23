@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><title>InvoicePro</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container": "#eeeeee", "on-secondary-fixed-variant": "#46464e", "inverse-surface": "#2f3131", "tertiary": "#000000", "surface-tint": "#5f5e5e", "background": "#f9f9f9", "on-tertiary-fixed": "#191c1f", "surface-container-high": "#e8e8e8", "tertiary-fixed": "#e0e2e6", "on-tertiary-fixed-variant": "#44474a", "secondary": "#5d5e66", "on-primary-fixed": "#1c1b1b", "surface-container-highest": "#e2e2e2", "tertiary-container": "#191c1f", "on-primary": "#ffffff", "tertiary-fixed-dim": "#c4c7ca", "inverse-on-surface": "#f0f1f1", "outline": "#747878", "on-secondary-fixed": "#1a1b22", "on-error-container": "#93000a", "inverse-primary": "#c8c6c5", "surface-dim": "#dadada", "on-secondary": "#ffffff", "primary-fixed": "#e5e2e1", "surface-container-lowest": "#ffffff", "outline-variant": "#c4c7c7", "on-surface": "#1a1c1c", "surface-container-low": "#f3f3f4", "primary-container": "#1c1b1b", "primary-fixed-dim": "#c8c6c5", "secondary-fixed-dim": "#c6c5cf", "on-tertiary": "#ffffff", "error-container": "#ffdad6", "surface-bright": "#f9f9f9", "on-surface-variant": "#444748", "on-primary-container": "#858383", "on-error": "#ffffff", "on-secondary-container": "#63646c", "error": "#ba1a1a", "primary": "#000000", "surface-variant": "#e2e2e2", "on-primary-fixed-variant": "#474646", "secondary-container": "#e3e1ec", "on-tertiary-container": "#818488", "on-background": "#1a1c1c", "surface": "#f9f9f9", "secondary-fixed": "#e3e1ec" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-md": "0.75rem", "space-xl": "1.5rem", "margin": "1rem", "space-lg": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "gutter": "0.75rem" }, fontFamily: { "label-md": ["Inter"], "body-sm": ["Inter"], "body-md": ["Inter"], "label-lg": ["Inter"], "headline-sm": ["Inter"], "headline-md": ["Inter"], "headline-lg": ["Inter"], "label-sm": ["Inter"], "body-lg": ["Inter"] }, fontSize: { "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" }], "body-lg": ["15px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "500" }] } } } }</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}.pb-safe{padding-bottom:max(env(safe-area-inset-bottom,0px),1rem);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-background font-body-md text-body-md text-on-background antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-6 px-margin flex items-center justify-between text-on-surface select-none"><span class="font-label-sm text-label-sm font-semibold tracking-tight">9:41</span><div class="flex items-center gap-space-xs text-on-surface"><span class="material-symbols-outlined text-[15px]">signal_cellular_alt</span><span class="material-symbols-outlined text-[15px]">wifi</span><span class="material-symbols-outlined text-[15px]">battery_full</span></div></div><div class="h-14 px-margin flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Go back" class="w-11 h-11 -ml-2 flex items-center justify-center text-on-surface hover:text-on-surface-variant transition-colors rounded-full" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="InvoicePro Logo" class="h-7 w-auto object-contain hidden" src="https://lh3.googleusercontent.com/aida/ALJJyrCWWQC7XYThF5m37nV7bn_CVCTJ3maSoJZ1PS3bYC5z6sJMjz0bQVcHdqnhkjoIU0wsXbAtHaqf9Mk6Tidy2cebhbBl-VwbOSThfcSkYj6lLsYoiO2BAMMz8P-MDQa7Gi0I1Wno321bNcQXC_qmPOQRGcP2CzIJuMv_8w_A3ZGFWEZWq7gjBP1jIOLo5V1aSAwlPzuCD3ZrXAxhiSacDvOhJJGJhnCvVxixsisJhi1h"/><h1 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight truncate max-w-[200px]">Add Item</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Context action" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors rounded-full"><span class="material-symbols-outlined text-[22px]">more_vert</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-20 pb-safe bg-surface"><div class="flex flex-col w-full">
+<!-- Interactive Form Container -->
+<form class="flex flex-col px-margin pb-32 gap-y-space-lg" id="itemForm" onsubmit="event.preventDefault(); handleSaveItem();">
+<!-- Context Indicator / Tip Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-highest flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[18px]">inventory_2</span>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">SKU Inventory Master</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Standard GST HSN Rate mapping</p>
+</div>
+</div>
+<span class="bg-surface-container-highest text-on-surface font-label-sm text-label-sm px-2 py-0.5 rounded-full uppercase tracking-wider">Active</span>
+</div>
+<!-- Field 1: Item Name -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface flex items-center" for="itemName">
+<span>Item Name</span>
+<span class="text-error ml-1 font-bold">*</span>
+</label>
+<div class="relative flex items-center">
+<input class="w-full h-[46px] px-space-md bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded-lg focus:outline-none focus:bg-surface-container-low placeholder:text-on-surface-variant shadow-sm transition-all" id="itemName" name="itemName" placeholder="e.g. Hex Head Flange Bolt M8" required="" type="text" value="VB001253 Bracket 2 LH/RH HM2"/>
+<button class="absolute right-3 text-on-surface-variant hover:text-on-surface" onclick="document.getElementById('itemName').value='';" type="button">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+</button>
+</div>
+</div>
+<!-- Field 2: HSN / SAC -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface flex items-center" for="hsnSac">
+<span>HSN / SAC</span>
+<span class="text-error ml-1 font-bold">*</span>
+</label>
+<button class="font-label-sm text-label-sm text-primary flex items-center gap-0.5 hover:underline" onclick="verifyHsn()" type="button">
+<span class="material-symbols-outlined text-[14px]">search</span>
+<span>Find Code</span>
+</button>
+</div>
+<div class="relative flex items-center">
+<input class="w-full h-[46px] px-space-md bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded-lg focus:outline-none focus:bg-surface-container-low placeholder:text-on-surface-variant tracking-wider shadow-sm transition-all" id="hsnSac" name="hsnSac" placeholder="8 digit HSN code" required="" type="text" value="87081010"/>
+<div class="absolute right-3 flex items-center pointer-events-none text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">qr_code_scanner</span>
+</div>
+</div>
+</div>
+<!-- 2-Column Row: Rate (₹) and GST (%) -->
+<div class="grid grid-cols-2 gap-space-md">
+<!-- Rate Input -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface flex items-center" for="itemRate">
+<span>Rate (₹)</span>
+<span class="text-error ml-1 font-bold">*</span>
+</label>
+<div class="relative flex items-center">
+<span class="absolute left-3 font-body-md text-body-md text-on-surface-variant font-medium">₹</span>
+<input class="w-full h-[46px] pl-7 pr-3 bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded-lg focus:outline-none focus:bg-surface-container-low placeholder:text-on-surface-variant shadow-sm transition-all" id="itemRate" name="itemRate" placeholder="0.00" required="" step="0.01" type="number" value="52.50"/>
+</div>
+</div>
+<!-- GST Input -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface flex items-center" for="itemGst">
+<span>GST (%)</span>
+<span class="text-error ml-1 font-bold">*</span>
+</label>
+<div class="relative flex items-center">
+<input class="w-full h-[46px] px-space-md bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded-lg focus:outline-none focus:bg-surface-container-low placeholder:text-on-surface-variant shadow-sm transition-all" id="itemGst" name="itemGst" placeholder="18" required="" type="number" value="18"/>
+<span class="absolute right-3 font-body-md text-body-md text-on-surface-variant">%</span>
+</div>
+</div>
+</div>
+<!-- Quick GST Presets -->
+<div class="flex items-center gap-2 overflow-x-auto py-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant whitespace-nowrap">Tax Slabs:</span>
+<button class="px-2.5 py-1 bg-surface-container-low hover:bg-surface-container rounded-full font-label-sm text-label-sm text-on-surface" onclick="setGst(0)" type="button">0%</button>
+<button class="px-2.5 py-1 bg-surface-container-low hover:bg-surface-container rounded-full font-label-sm text-label-sm text-on-surface" onclick="setGst(5)" type="button">5%</button>
+<button class="px-2.5 py-1 bg-surface-container-low hover:bg-surface-container rounded-full font-label-sm text-label-sm text-on-surface" onclick="setGst(12)" type="button">12%</button>
+<button class="px-2.5 py-1 bg-primary text-on-primary rounded-full font-label-sm text-label-sm" onclick="setGst(18)" type="button">18%</button>
+<button class="px-2.5 py-1 bg-surface-container-low hover:bg-surface-container rounded-full font-label-sm text-label-sm text-on-surface" onclick="setGst(28)" type="button">28%</button>
+</div>
+<!-- 2-Column Row: Unit and Category -->
+<div class="grid grid-cols-2 gap-space-md">
+<!-- Unit Select -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface flex items-center" for="itemUnit">
+<span>Unit</span>
+<span class="text-error ml-1 font-bold">*</span>
+</label>
+<div class="relative flex items-center">
+<select class="w-full h-[46px] px-space-md pr-8 bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded-lg appearance-none focus:outline-none focus:bg-surface-container-low shadow-sm transition-all" id="itemUnit" name="itemUnit" required="">
+<option selected="" value="Nos">Nos</option>
+<option value="Kgs">Kgs</option>
+<option value="Pcs">Pcs</option>
+<option value="Mtr">Mtr</option>
+<option value="Set">Set</option>
+</select>
+<div class="absolute right-3 pointer-events-none text-on-surface-variant flex items-center">
+<span class="material-symbols-outlined text-[20px]">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Category Select -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface flex items-center" for="itemCategory">
+<span>Category</span>
+</label>
+<div class="relative flex items-center">
+<select class="w-full h-[46px] px-space-md pr-8 bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded-lg appearance-none focus:outline-none focus:bg-surface-container-low shadow-sm transition-all" id="itemCategory" name="itemCategory">
+<option selected="" value="Brackets">Brackets</option>
+<option value="Clips">Clips</option>
+<option value="Fasteners">Fasteners</option>
+<option value="Pipes">Pipes</option>
+<option value="Others">Others</option>
+</select>
+<div class="absolute right-3 pointer-events-none text-on-surface-variant flex items-center">
+<span class="material-symbols-outlined text-[20px]">expand_more</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Company (Seller) Field -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface flex items-center" for="itemCompany">
+<span>Company (Seller)</span>
+<span class="text-error ml-1 font-bold">*</span>
+</label>
+<div class="relative flex items-center">
+<div class="absolute left-3 pointer-events-none text-on-surface-variant flex items-center">
+<span class="material-symbols-outlined text-[20px]">store</span>
+</div>
+<select class="w-full h-[46px] pl-10 pr-9 bg-surface-container-lowest text-on-surface font-body-md text-body-md rounded-lg appearance-none focus:outline-none focus:bg-surface-container-low shadow-sm transition-all" id="itemCompany" name="itemCompany" required="">
+<option selected="" value="Mahadev Tech Engineering">Mahadev Tech Engineering</option>
+<option value="Tech Force Composites Pvt Ltd">Tech Force Composites Pvt Ltd</option>
+<option value="Shree Carbon Factory">Shree Carbon Factory</option>
+<option value="Kumar Engineering Works">Kumar Engineering Works</option>
+</select>
+<div class="absolute right-3 pointer-events-none text-on-surface-variant flex items-center">
+<span class="material-symbols-outlined text-[20px]">expand_more</span>
+</div>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-[13px]">info</span>
+<span>Item will be linked to active state GSTIN profile (Code: 29)</span>
+</p>
+</div>
+<!-- Mini Tax Calculation Preview Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md mt-1 shadow-sm">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-md text-label-md text-on-surface-variant">Price Summary (1 Unit)</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">HSN 87081010</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface mb-1">
+<span>Base Rate</span>
+<span class="font-medium" id="previewBase">₹52.50</span>
+</div>
+<div class="flex items-center justify-between font-body-sm text-body-sm text-on-surface mb-1.5">
+<span>Estimated GST (18%)</span>
+<span class="font-medium" id="previewGst">₹9.45</span>
+</div>
+<div class="h-[1px] bg-surface-container-highest w-full my-1.5"></div>
+<div class="flex items-center justify-between font-label-lg text-label-lg text-on-surface font-bold">
+<span>Effective Price / Unit</span>
+<span id="previewTotal">₹61.95</span>
+</div>
+</div>
+<!-- Toast Notification for dynamic feedback -->
+<div class="fixed bottom-24 left-4 right-4 bg-inverse-surface text-inverse-on-surface p-space-md rounded-xl flex items-center justify-between shadow-xl opacity-0 pointer-events-none transition-all duration-300 transform translate-y-2 z-40" id="saveToast">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-[20px] text-surface-bright">check_circle</span>
+<span class="font-body-sm text-body-sm font-medium">Item successfully updated in catalog!</span>
+</div>
+<button class="text-inverse-on-surface" onclick="hideToast()" type="button">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<!-- Sticky Bottom Fixed Action Shelf -->
+<div class="fixed bottom-0 left-0 right-0 p-margin bg-surface/90 backdrop-blur-md z-30 flex items-center justify-center">
+<button class="w-full h-12 bg-primary text-on-primary font-label-lg text-label-lg rounded-lg shadow-md hover:bg-neutral-900 active:scale-[0.99] transition-all flex items-center justify-center gap-2" type="submit">
+<span class="material-symbols-outlined text-[20px]">save</span>
+<span>Save Item</span>
+</button>
+</div>
+</form>
+</div>
+<script>
+  function calculatePreview() {
+    const rateInput = document.getElementById('itemRate');
+    const gstInput = document.getElementById('itemGst');
+    const previewBase = document.getElementById('previewBase');
+    const previewGst = document.getElementById('previewGst');
+    const previewTotal = document.getElementById('previewTotal');
+    
+    const rate = parseFloat(rateInput.value) || 0;
+    const gst = parseFloat(gstInput.value) || 0;
+    
+    const gstAmount = (rate * gst) / 100;
+    const totalAmount = rate + gstAmount;
+
+    previewBase.textContent = '₹' + rate.toFixed(2);
+    previewGst.textContent = '₹' + gstAmount.toFixed(2) + ' (' + gst + '%)';
+    previewTotal.textContent = '₹' + totalAmount.toFixed(2);
+  }
+
+  function setGst(val) {
+    const gstInput = document.getElementById('itemGst');
+    gstInput.value = val;
+    calculatePreview();
+  }
+
+  function verifyHsn() {
+    const hsn = document.getElementById('hsnSac').value;
+    alert('HSN ' + hsn + ' verified: "Parts and accessories of the motor vehicles of headings 8701 to 8705"');
+  }
+
+  function handleSaveItem() {
+    const toast = document.getElementById('saveToast');
+    toast.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-2');
+    toast.classList.add('opacity-100', 'translate-y-0');
+    setTimeout(() => {
+      hideToast();
+    }, 2400);
+  }
+
+  function hideToast() {
+    const toast = document.getElementById('saveToast');
+    toast.classList.add('opacity-0', 'pointer-events-none', 'translate-y-2');
+    toast.classList.remove('opacity-100', 'translate-y-0');
+  }
+
+  document.getElementById('itemRate').addEventListener('input', calculatePreview);
+  document.getElementById('itemGst').addEventListener('input', calculatePreview);
+</script></main></body></html>

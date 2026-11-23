@@ -1,0 +1,20 @@
+package com.invoicepro.data
+
+import android.content.Context
+import androidx.room.*
+import kotlinx.coroutines.flow.Flow
+
+@Entity(tableName = "companies") data class CompanyEntity(
+ @PrimaryKey(autoGenerate = true) val id: Long = 0, val name: String, val role: String,
+ val address: String = "", val city: String = "", val state: String = "", val stateCode: String = "",
+ val gstin: String = "", val phone: String = "", val email: String = "", val bankName: String = "", val accountNo: String = "", val ifsc: String = "", val isActiveSeller: Boolean = false)
+@Entity(tableName = "items", foreignKeys = [ForeignKey(entity = CompanyEntity::class, parentColumns=["id"], childColumns=["companyId"], onDelete=ForeignKey.RESTRICT)], indices=[Index("companyId")])
+data class ItemEntity(@PrimaryKey(autoGenerate=true) val id:Long=0, val companyId:Long, val name:String, val hsn:String, val rate:String, val gst:String, val unit:String="Nos", val category:String="", val createdAt:Long=System.currentTimeMillis())
+@Entity(tableName="invoices", indices=[Index(value=["sellerId","number"], unique=true)]) data class InvoiceEntity(@PrimaryKey(autoGenerate=true) val id:Long=0, val number:String, val date:Long, val sellerId:Long, val buyerId:Long?, val sellerSnapshot:String, val buyerSnapshot:String, val taxMode:String, val subtotal:String, val taxTotal:String, val roundOff:String, val grandTotal:String, val terms:String="", val declaration:String="", val createdAt:Long=System.currentTimeMillis())
+@Entity(tableName="invoice_items", foreignKeys=[ForeignKey(entity=InvoiceEntity::class,parentColumns=["id"],childColumns=["invoiceId"],onDelete=ForeignKey.CASCADE)], indices=[Index("invoiceId")]) data class InvoiceItemEntity(@PrimaryKey(autoGenerate=true) val id:Long=0,val invoiceId:Long,val sourceItemId:Long?,val description:String,val hsn:String,val quantity:String,val unit:String,val rate:String,val gst:String,val taxable:String,val tax:String,val total:String)
+@Entity(tableName="settings") data class SettingsEntity(@PrimaryKey val id:Int=1,val invoicePrefix:String="GST",val financialYearFormat:String="YY-YY",val autoNumber:Boolean=true,val terms:String="",val declaration:String="We declare that this invoice shows the actual price of the goods described and that all particulars are true and correct.")
+
+@Dao interface InvoiceDao { @Query("SELECT * FROM invoices ORDER BY createdAt DESC") fun invoices(): Flow<List<InvoiceEntity>>; @Insert suspend fun insert(invoice:InvoiceEntity):Long; @Insert suspend fun insertItems(items:List<InvoiceItemEntity>); @Transaction suspend fun save(invoice:InvoiceEntity, items:List<InvoiceItemEntity>) { val id=insert(invoice); insertItems(items.map { it.copy(invoiceId=id) }) }; @Delete suspend fun delete(invoice:InvoiceEntity) }
+@Dao interface CompanyDao { @Query("SELECT * FROM companies ORDER BY name") fun companies():Flow<List<CompanyEntity>>; @Query("SELECT * FROM companies WHERE isActiveSeller=1 LIMIT 1") fun active():Flow<CompanyEntity?>; @Insert suspend fun insert(c:CompanyEntity):Long; @Update suspend fun update(c:CompanyEntity); @Delete suspend fun delete(c:CompanyEntity); @Query("UPDATE companies SET isActiveSeller=0 WHERE role='SELLER'") suspend fun clearActive(); @Transaction suspend fun activate(c:CompanyEntity){clearActive();update(c.copy(isActiveSeller=true))} }
+@Dao interface ItemDao { @Query("SELECT * FROM items WHERE companyId=:companyId ORDER BY name") fun items(companyId:Long):Flow<List<ItemEntity>>; @Insert suspend fun insert(item:ItemEntity):Long; @Update suspend fun update(item:ItemEntity); @Delete suspend fun delete(item:ItemEntity) }
+@Database(entities=[CompanyEntity::class,ItemEntity::class,InvoiceEntity::class,InvoiceItemEntity::class,SettingsEntity::class],version=1,exportSchema=false) abstract class AppDatabase:RoomDatabase(){abstract fun invoiceDao():InvoiceDao;abstract fun companyDao():CompanyDao;abstract fun itemDao():ItemDao;companion object{fun create(context:Context)=Room.databaseBuilder(context,AppDatabase::class.java,"invoicepro.db").fallbackToDestructiveMigration().build()}}

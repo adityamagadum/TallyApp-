@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><title>InvoicePro</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container": "#eeeeee", "on-secondary-fixed-variant": "#46464e", "inverse-surface": "#2f3131", "tertiary": "#000000", "surface-tint": "#5f5e5e", "background": "#f9f9f9", "on-tertiary-fixed": "#191c1f", "surface-container-high": "#e8e8e8", "tertiary-fixed": "#e0e2e6", "on-tertiary-fixed-variant": "#44474a", "secondary": "#5d5e66", "on-primary-fixed": "#1c1b1b", "surface-container-highest": "#e2e2e2", "tertiary-container": "#191c1f", "on-primary": "#ffffff", "tertiary-fixed-dim": "#c4c7ca", "inverse-on-surface": "#f0f1f1", "outline": "#747878", "on-secondary-fixed": "#1a1b22", "on-error-container": "#93000a", "inverse-primary": "#c8c6c5", "surface-dim": "#dadada", "on-secondary": "#ffffff", "primary-fixed": "#e5e2e1", "surface-container-lowest": "#ffffff", "outline-variant": "#c4c7c7", "on-surface": "#1a1c1c", "surface-container-low": "#f3f3f4", "primary-container": "#1c1b1b", "primary-fixed-dim": "#c8c6c5", "secondary-fixed-dim": "#c6c5cf", "on-tertiary": "#ffffff", "error-container": "#ffdad6", "surface-bright": "#f9f9f9", "on-surface-variant": "#444748", "on-primary-container": "#858383", "on-error": "#ffffff", "on-secondary-container": "#63646c", "error": "#ba1a1a", "primary": "#000000", "surface-variant": "#e2e2e2", "on-primary-fixed-variant": "#474646", "secondary-container": "#e3e1ec", "on-tertiary-container": "#818488", "on-background": "#1a1c1c", "surface": "#f9f9f9", "secondary-fixed": "#e3e1ec" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-md": "0.75rem", "space-xl": "1.5rem", "margin": "1rem", "space-lg": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "gutter": "0.75rem" }, fontFamily: { "label-md": ["Inter"], "body-sm": ["Inter"], "body-md": ["Inter"], "label-lg": ["Inter"], "headline-sm": ["Inter"], "headline-md": ["Inter"], "headline-lg": ["Inter"], "label-sm": ["Inter"], "body-lg": ["Inter"] }, fontSize: { "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" }], "body-lg": ["15px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "500" }] } } } }</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}.pb-safe{padding-bottom:max(env(safe-area-inset-bottom,0px),1rem);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-background font-body-md text-body-md text-on-background antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-6 px-margin flex items-center justify-between text-on-surface select-none"><span class="font-label-sm text-label-sm font-semibold tracking-tight">9:41</span><div class="flex items-center gap-space-xs text-on-surface"><span class="material-symbols-outlined text-[15px]">signal_cellular_alt</span><span class="material-symbols-outlined text-[15px]">wifi</span><span class="material-symbols-outlined text-[15px]">battery_full</span></div></div><div class="h-14 px-margin flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Go back" class="w-11 h-11 -ml-2 flex items-center justify-center text-on-surface hover:text-on-surface-variant transition-colors rounded-full" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="InvoicePro Logo" class="h-7 w-auto object-contain hidden" src="https://lh3.googleusercontent.com/aida/ALJJyrCWWQC7XYThF5m37nV7bn_CVCTJ3maSoJZ1PS3bYC5z6sJMjz0bQVcHdqnhkjoIU0wsXbAtHaqf9Mk6Tidy2cebhbBl-VwbOSThfcSkYj6lLsYoiO2BAMMz8P-MDQa7Gi0I1Wno321bNcQXC_qmPOQRGcP2CzIJuMv_8w_A3ZGFWEZWq7gjBP1jIOLo5V1aSAwlPzuCD3ZrXAxhiSacDvOhJJGJhnCvVxixsisJhi1h"/><h1 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight truncate max-w-[200px]">Invoice Preview</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Context action" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors rounded-full"><span class="material-symbols-outlined text-[22px]">more_vert</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-20 pb-safe bg-surface"><div class="flex flex-col w-full pb-24">
+<!-- Top Document Toolbar & Quick Stats -->
+<div class="px-margin pt-space-xs pb-space-sm flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary inline-block"></span>
+<span class="font-label-md text-label-md text-on-surface font-semibold tracking-wide">GST/26-27/031</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[10px]">ORIGINAL FOR RECIPIENT</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="p-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors" id="copy-btn" onclick="navigator.clipboard?.writeText('GST/26-27/031'); showToast('Invoice # copied!')" title="Copy Invoice Number">
+<span class="material-symbols-outlined text-[18px] block">content_copy</span>
+</button>
+<button class="p-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors" onclick="window.print()" title="Print Invoice">
+<span class="material-symbols-outlined text-[18px] block">print</span>
+</button>
+</div>
+</div>
+<!-- Ambient Document Viewport (Dark/Neutral Slate Canvas holding crisp White A4 Sheet) -->
+<div class="px-margin w-full flex flex-col items-center">
+<div class="w-full bg-inverse-surface rounded-xl p-space-sm shadow-xl flex flex-col items-center overflow-x-auto transition-transform duration-200" id="preview-wrapper">
+<!-- A4 Sheet Surface -->
+<div class="w-full bg-surface-container-lowest text-on-surface transition-all duration-200 select-text origin-top shadow-sm font-body-sm text-[11px] leading-[14px]" id="invoice-sheet" style="transform: scale(1);">
+<!-- Header Strip -->
+<div class="p-2.5 text-center bg-surface-container-low">
+<h2 class="font-headline-sm text-headline-sm uppercase tracking-wider font-bold text-on-surface">Tax Invoice</h2>
+<p class="font-label-sm text-label-sm text-on-surface-variant tracking-tight mt-0.5">(Issued under Section 31 of Central Goods and Services Tax Act, 2017)</p>
+</div>
+<!-- Master 2-Column Seller / Invoice Meta Grid (Structural Dividers via tonal shifts) -->
+<div class="bg-surface-container-high p-[1px] grid grid-cols-2 gap-[1px]">
+<!-- Seller Info Box -->
+<div class="bg-surface-container-lowest p-2.5 flex flex-col justify-between">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold uppercase tracking-wider block mb-1">Supplier Details</span>
+<p class="font-label-lg text-[13px] font-bold text-on-surface leading-snug">MAHADEV TECH ENGINEERING</p>
+<p class="text-on-surface-variant mt-1">Plot No 35, Niskar Building, Vinayak Layout, Srinagar, Dharwad</p>
+<p class="text-on-surface-variant">Ph: +91 7483994967</p>
+<p class="text-on-surface-variant truncate">E-Mail: techmahadev689@gmail.com</p>
+</div>
+<div class="mt-2 pt-1.5 bg-surface-container-low px-1.5 py-1 rounded">
+<p class="font-label-md text-label-md font-semibold text-on-surface">GSTIN/UIN: <span class="font-mono">29DCIPR3153L1Z0</span></p>
+<p class="text-on-surface-variant text-[10px]">State Name: Karnataka, Code: 29</p>
+</div>
+</div>
+<!-- Invoice Metadata Grid -->
+<div class="bg-surface-container-lowest p-2.5 flex flex-col justify-between">
+<div class="space-y-1.5">
+<div class="flex justify-between items-start">
+<span class="text-on-surface-variant text-[10px] uppercase font-semibold">Invoice No.</span>
+<span class="font-label-md text-label-md font-bold text-on-surface font-mono">GST/26-27/031</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant text-[10px] uppercase font-semibold">Dated</span>
+<span class="font-semibold text-on-surface">6-Nov-26</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant text-[10px] uppercase font-semibold">Delivery Note</span>
+<span class="text-on-surface-variant">—</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant text-[10px] uppercase font-semibold">Mode / Terms</span>
+<span class="text-on-surface">Net 30 Days</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant text-[10px] uppercase font-semibold">Buyer's Order No.</span>
+<span class="font-mono font-semibold text-on-surface">GOA/26401058</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-on-surface-variant text-[10px] uppercase font-semibold">Dispatch Doc No.</span>
+<span class="text-on-surface-variant">LR-84920</span>
+</div>
+</div>
+</div>
+<!-- Buyer Box (Full Width Spanning across 2 cols) -->
+<div class="bg-surface-container-lowest p-2.5 col-span-2 flex flex-col justify-between">
+<div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1">
+<div>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold uppercase tracking-wider block mb-0.5">Billed To (Recipient)</span>
+<p class="font-label-lg text-[13px] font-bold text-on-surface">Tech Force Composites Pvt Ltd</p>
+<p class="text-on-surface-variant mt-0.5">Plot No 46A, Survey No 73, Village Sao Jose De Areal, Near Carbon Factory, Salcete GOA</p>
+<p class="text-on-surface-variant font-mono mt-0.5 font-semibold">GSTIN/UIN: 30AACT20876M1Z4</p>
+</div>
+<div class="bg-surface-container-low px-2 py-1.5 rounded self-start mt-1 sm:mt-0 text-right">
+<p class="text-[10px] text-on-surface-variant font-semibold uppercase">Destination</p>
+<p class="font-label-md text-label-md font-bold text-on-surface">Goa (Code: 30)</p>
+<p class="text-[10px] text-on-surface-variant">Tax Category: IGST (Inter-State)</p>
+</div>
+</div>
+</div>
+</div>
+<!-- HSN / Goods Table -->
+<div class="w-full overflow-hidden bg-surface-container-high p-[1px]">
+<!-- Table Header -->
+<div class="grid grid-cols-12 bg-surface-container text-on-surface font-label-sm text-[10px] font-bold uppercase tracking-wider py-1.5 px-2 gap-1 text-center">
+<div class="col-span-1 text-left">Sl</div>
+<div class="col-span-5 text-left">Description of Goods</div>
+<div class="col-span-2">HSN/SAC</div>
+<div class="col-span-1 text-right">Qty</div>
+<div class="col-span-1 text-right">Rate</div>
+<div class="col-span-2 text-right">Amount (₹)</div>
+</div>
+<!-- Item Row 1 -->
+<div class="grid grid-cols-12 bg-surface-container-lowest text-on-surface py-2 px-2 gap-1 text-[11px] items-start">
+<div class="col-span-1 text-on-surface-variant font-mono">1</div>
+<div class="col-span-5 text-left">
+<span class="font-semibold block text-on-surface">VB001253 Bracket 2 LH/RH HM2</span>
+<span class="text-on-surface-variant text-[9px]">Mild Steel Pressed Parts • Grade A</span>
+</div>
+<div class="col-span-2 text-center font-mono text-on-surface-variant text-[10px]">87081010</div>
+<div class="col-span-1 text-right font-medium">60 <span class="text-[9px] text-on-surface-variant">Nos</span></div>
+<div class="col-span-1 text-right font-mono">52.50</div>
+<div class="col-span-2 text-right font-mono font-semibold">3,150.00</div>
+</div>
+<!-- Item Row 2 -->
+<div class="grid grid-cols-12 bg-surface-container-lowest text-on-surface py-2 px-2 gap-1 text-[11px] items-start">
+<div class="col-span-1 text-on-surface-variant font-mono">2</div>
+<div class="col-span-5 text-left">
+<span class="font-semibold block text-on-surface">Small E Clip</span>
+<span class="text-on-surface-variant text-[9px]">High Tensile Spring Steel 1.2mm</span>
+</div>
+<div class="col-span-2 text-center font-mono text-on-surface-variant text-[10px]">87081010</div>
+<div class="col-span-1 text-right font-medium">1,100 <span class="text-[9px] text-on-surface-variant">Nos</span></div>
+<div class="col-span-1 text-right font-mono">4.90</div>
+<div class="col-span-2 text-right font-mono font-semibold">5,390.00</div>
+</div>
+<!-- Total Quantity & Tax Calculations Stack -->
+<div class="bg-surface-container-low px-2.5 py-2 grid grid-cols-12 gap-1">
+<div class="col-span-7 flex items-center justify-between text-on-surface-variant font-label-sm text-[10px]">
+<span>Total Quantity: <strong class="text-on-surface">1,160 Nos</strong></span>
+<span>2 Line Items</span>
+</div>
+<div class="col-span-5 flex justify-between items-center text-right font-mono text-[11px]">
+<span class="text-on-surface-variant">Sub Total</span>
+<span class="font-semibold text-on-surface">₹8,540.00</span>
+</div>
+</div>
+<!-- Tax Breakdowns -->
+<div class="bg-surface-container-lowest px-2.5 py-1.5 flex flex-col gap-1">
+<div class="flex justify-between items-center text-[10px]">
+<span class="text-on-surface-variant font-mono pl-4">IGST (18.00% on ₹8,540.00)</span>
+<span class="font-mono text-on-surface font-medium">+ ₹1,537.20</span>
+</div>
+<div class="flex justify-between items-center text-[10px]">
+<span class="text-on-surface-variant font-mono pl-4">Round Off Adjustment</span>
+<span class="font-mono text-on-surface-variant font-medium">(-) ₹0.20</span>
+</div>
+</div>
+<!-- Final Grand Total Bar -->
+<div class="bg-primary text-on-primary px-3 py-2 flex justify-between items-center">
+<div class="flex flex-col">
+<span class="font-label-sm text-[9px] uppercase tracking-wider text-on-primary-container">Total Invoice Amount</span>
+<span class="font-label-md text-label-md font-bold uppercase tracking-tight">Invoice Grand Total</span>
+</div>
+<span class="font-headline-sm text-headline-sm font-bold font-mono tracking-tight">₹10,077.00</span>
+</div>
+<!-- Amount In Words -->
+<div class="bg-surface-container-lowest p-2.5">
+<span class="text-[9px] uppercase font-bold text-on-surface-variant block tracking-wider">Amount Chargeable (in words)</span>
+<p class="font-label-md text-label-md font-semibold text-on-surface tracking-tight mt-0.5 italic">
+              INR Ten Thousand Seventy Seven Only
+            </p>
+</div>
+<!-- HSN Summary Table -->
+<div class="bg-surface-container-low p-2">
+<span class="text-[9px] font-bold text-on-surface uppercase tracking-wider block mb-1">Tax Summary (HSN/SAC 87081010)</span>
+<div class="grid grid-cols-4 text-center font-mono text-[9px] bg-surface-container-lowest p-1.5 rounded gap-1 text-on-surface-variant">
+<div>
+<span class="block text-[8px] uppercase">Taxable Value</span>
+<span class="font-semibold text-on-surface">₹8,540.00</span>
+</div>
+<div>
+<span class="block text-[8px] uppercase">IGST Rate</span>
+<span class="font-semibold text-on-surface">18%</span>
+</div>
+<div>
+<span class="block text-[8px] uppercase">IGST Amount</span>
+<span class="font-semibold text-on-surface">₹1,537.20</span>
+</div>
+<div>
+<span class="block text-[8px] uppercase">Total Tax</span>
+<span class="font-semibold text-on-surface">₹1,537.20</span>
+</div>
+</div>
+</div>
+<!-- Bank & Declaration Footer Box -->
+<div class="bg-surface-container-high grid grid-cols-2 gap-[1px]">
+<!-- Bank Details -->
+<div class="bg-surface-container-lowest p-2.5 text-[10px] space-y-0.5">
+<span class="text-[9px] font-bold text-on-surface-variant uppercase tracking-wider block mb-1">Company Bank Details</span>
+<p class="text-on-surface"><span class="text-on-surface-variant">Bank Name:</span> <strong>Karnataka Bank Ltd</strong></p>
+<p class="text-on-surface font-mono"><span class="text-on-surface-variant">A/c No:</span> <strong>1922000100047401</strong></p>
+<p class="text-on-surface font-mono"><span class="text-on-surface-variant">Branch &amp; IFSC:</span> <strong>Dharwad Main / KARB0000192</strong></p>
+<div class="mt-2 pt-1 text-[8px] text-on-surface-variant leading-tight">
+<strong>Declaration:</strong> We declare that this invoice shows the actual price of the goods described and that all particulars are true and correct.
+              </div>
+</div>
+<!-- Signature Block -->
+<div class="bg-surface-container-lowest p-2.5 flex flex-col justify-between items-end text-right">
+<div>
+<span class="text-[9px] text-on-surface-variant font-medium">for</span>
+<p class="font-label-sm text-label-sm font-bold text-on-surface">MAHADEV TECH ENGINEERING</p>
+</div>
+<!-- Stamp Visual Anchor -->
+<div class="my-2 py-1 px-3 bg-surface-container-low rounded-lg text-center self-center opacity-85">
+<span class="material-symbols-outlined text-[28px] text-on-surface-variant block">verified</span>
+<span class="text-[8px] font-mono tracking-widest uppercase block text-on-surface-variant">Digitally Signed</span>
+</div>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Authorised Signatory</span>
+</div>
+</div>
+</div>
+<!-- Micro Ledger Footnote -->
+<div class="p-1.5 bg-surface-container text-center text-on-surface-variant text-[8px] uppercase tracking-wider">
+          This is a computer generated document • E. &amp; O.E.
+        </div>
+</div>
+</div>
+</div>
+<!-- Interactive Document Metadata & Status Cards -->
+<div class="px-margin mt-space-lg space-y-space-md">
+<!-- Quick Delivery & E-Way Bill Notice -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[20px]">local_shipping</span>
+</div>
+<div>
+<p class="font-label-md text-label-md font-semibold text-on-surface">Inter-State Consignment</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Karnataka (29) → Goa (30)</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm font-semibold px-2 py-1 bg-surface-container-highest rounded text-on-surface">E-Way Not Req. (&lt;50k)</span>
+</div>
+<!-- Client Communication Strip -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface shrink-0">
+<span class="material-symbols-outlined text-[20px]">mail</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-md text-label-md font-semibold text-on-surface truncate">Tech Force Composites</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">billing@techforcegoa.com</p>
+</div>
+</div>
+<button class="shrink-0 px-3 py-1.5 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold hover:bg-surface-container-high transition-colors" onclick="showToast('Invoice sent to client email!')">
+        Send Mail
+      </button>
+</div>
+</div>
+<!-- Persistent Floating Zoom & Action Control Bar (Docked bottom) -->
+<div class="fixed bottom-4 inset-x-margin z-40 max-w-md mx-auto flex items-center justify-between gap-space-sm bg-inverse-surface text-inverse-on-surface p-2 rounded-full shadow-2xl backdrop-blur-md">
+<!-- Zoom Controller Segment -->
+<div class="flex items-center gap-1 bg-surface-tint/20 rounded-full px-1.5 py-1">
+<button aria-label="Zoom out" class="w-8 h-8 rounded-full flex items-center justify-center hover:bg-surface-tint/30 active:scale-95 transition-all text-inverse-on-surface" id="zoom-out" onclick="adjustZoom(-10)">
+<span class="material-symbols-outlined text-[18px]">remove</span>
+</button>
+<span class="font-label-sm text-label-sm font-mono px-1 select-none min-w-[38px] text-center" id="zoom-level">100%</span>
+<button aria-label="Zoom in" class="w-8 h-8 rounded-full flex items-center justify-center hover:bg-surface-tint/30 active:scale-95 transition-all text-inverse-on-surface" id="zoom-in" onclick="adjustZoom(10)">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+<button class="w-7 h-7 rounded-full flex items-center justify-center hover:bg-surface-tint/30 text-inverse-on-surface ml-0.5" onclick="resetZoom()" title="Fit to width">
+<span class="material-symbols-outlined text-[15px]">fit_screen</span>
+</button>
+</div>
+<!-- Quick Action Hub -->
+<div class="flex items-center gap-1.5 pr-1">
+<button class="h-10 px-3.5 rounded-full bg-surface-tint/25 hover:bg-surface-tint/40 flex items-center gap-1.5 text-inverse-on-surface transition-all active:scale-95" onclick="shareInvoice()">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span class="font-label-sm text-label-sm font-semibold">Share</span>
+</button>
+<button class="h-10 px-4 rounded-full bg-primary-fixed text-on-primary-fixed hover:bg-primary-fixed-dim flex items-center gap-1.5 transition-all shadow-md active:scale-95" onclick="downloadPdf()">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span class="font-label-sm text-label-sm font-bold">PDF</span>
+</button>
+</div>
+</div>
+<!-- Toast Notification Capsule (Hidden by default) -->
+<div class="fixed top-24 left-1/2 -translate-x-1/2 z-50 px-4 py-2 rounded-full bg-inverse-surface text-inverse-on-surface font-label-md text-label-md shadow-lg pointer-events-none transition-all duration-300 opacity-0 translate-y-2" id="toast">
+    Action completed
+  </div>
+</div>
+<script>
+  let currentZoom = 100;
+  const sheet = document.getElementById('invoice-sheet');
+  const zoomDisplay = document.getElementById('zoom-level');
+  const toast = document.getElementById('toast');
+
+  function adjustZoom(delta) {
+    currentZoom = Math.min(Math.max(currentZoom + delta, 70), 140);
+    applyZoom();
+  }
+
+  function resetZoom() {
+    currentZoom = 100;
+    applyZoom();
+  }
+
+  function applyZoom() {
+    zoomDisplay.textContent = currentZoom + '%';
+    sheet.style.transform = `scale(${currentZoom / 100})`;
+  }
+
+  function showToast(message) {
+    if (!toast) return;
+    toast.textContent = message;
+    toast.classList.remove('opacity-0', 'translate-y-2');
+    toast.classList.add('opacity-100', 'translate-y-0');
+    setTimeout(() => {
+      toast.classList.add('opacity-0', 'translate-y-2');
+      toast.classList.remove('opacity-100', 'translate-y-0');
+    }, 2200);
+  }
+
+  function shareInvoice() {
+    if (navigator.share) {
+      navigator.share({
+        title: 'Tax Invoice GST/26-27/031',
+        text: 'Mahadev Tech Engineering - Invoice ₹10,077.00 for Tech Force Composites Pvt Ltd',
+        url: window.location.href,
+      }).catch(() => showToast('Share sheet dismissed'));
+    } else {
+      showToast('Invoice link ready to share');
+    }
+  }
+
+  function downloadPdf() {
+    showToast('Generating signed PDF...');
+    setTimeout(() => {
+      showToast('PDF downloaded: GST_26-27_031.pdf');
+    }, 1000);
+  }
+</script></main></body></html>

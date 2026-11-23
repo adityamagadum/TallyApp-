@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><title>InvoicePro</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container": "#eeeeee", "on-secondary-fixed-variant": "#46464e", "inverse-surface": "#2f3131", "tertiary": "#000000", "surface-tint": "#5f5e5e", "background": "#f9f9f9", "on-tertiary-fixed": "#191c1f", "surface-container-high": "#e8e8e8", "tertiary-fixed": "#e0e2e6", "on-tertiary-fixed-variant": "#44474a", "secondary": "#5d5e66", "on-primary-fixed": "#1c1b1b", "surface-container-highest": "#e2e2e2", "tertiary-container": "#191c1f", "on-primary": "#ffffff", "tertiary-fixed-dim": "#c4c7ca", "inverse-on-surface": "#f0f1f1", "outline": "#747878", "on-secondary-fixed": "#1a1b22", "on-error-container": "#93000a", "inverse-primary": "#c8c6c5", "surface-dim": "#dadada", "on-secondary": "#ffffff", "primary-fixed": "#e5e2e1", "surface-container-lowest": "#ffffff", "outline-variant": "#c4c7c7", "on-surface": "#1a1c1c", "surface-container-low": "#f3f3f4", "primary-container": "#1c1b1b", "primary-fixed-dim": "#c8c6c5", "secondary-fixed-dim": "#c6c5cf", "on-tertiary": "#ffffff", "error-container": "#ffdad6", "surface-bright": "#f9f9f9", "on-surface-variant": "#444748", "on-primary-container": "#858383", "on-error": "#ffffff", "on-secondary-container": "#63646c", "error": "#ba1a1a", "primary": "#000000", "surface-variant": "#e2e2e2", "on-primary-fixed-variant": "#474646", "secondary-container": "#e3e1ec", "on-tertiary-container": "#818488", "on-background": "#1a1c1c", "surface": "#f9f9f9", "secondary-fixed": "#e3e1ec" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-md": "0.75rem", "space-xl": "1.5rem", "margin": "1rem", "space-lg": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "gutter": "0.75rem" }, fontFamily: { "label-md": ["Inter"], "body-sm": ["Inter"], "body-md": ["Inter"], "label-lg": ["Inter"], "headline-sm": ["Inter"], "headline-md": ["Inter"], "headline-lg": ["Inter"], "label-sm": ["Inter"], "body-lg": ["Inter"] }, fontSize: { "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" }], "body-lg": ["15px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "500" }] } } } }</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}.pb-safe{padding-bottom:max(env(safe-area-inset-bottom,0px),1rem);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-background font-body-md text-body-md text-on-background antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-6 px-margin flex items-center justify-between text-on-surface select-none"><span class="font-label-sm text-label-sm font-semibold tracking-tight">9:41</span><div class="flex items-center gap-space-xs text-on-surface"><span class="material-symbols-outlined text-[15px]">signal_cellular_alt</span><span class="material-symbols-outlined text-[15px]">wifi</span><span class="material-symbols-outlined text-[15px]">battery_full</span></div></div><div class="h-14 px-margin flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Go back" class="w-11 h-11 -ml-2 flex items-center justify-center text-on-surface hover:text-on-surface-variant transition-colors rounded-full" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="InvoicePro Logo" class="h-7 w-auto object-contain hidden" src="https://lh3.googleusercontent.com/aida/ALJJyrCWWQC7XYThF5m37nV7bn_CVCTJ3maSoJZ1PS3bYC5z6sJMjz0bQVcHdqnhkjoIU0wsXbAtHaqf9Mk6Tidy2cebhbBl-VwbOSThfcSkYj6lLsYoiO2BAMMz8P-MDQa7Gi0I1Wno321bNcQXC_qmPOQRGcP2CzIJuMv_8w_A3ZGFWEZWq7gjBP1jIOLo5V1aSAwlPzuCD3ZrXAxhiSacDvOhJJGJhnCvVxixsisJhi1h"/><h1 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight truncate max-w-[200px]">Create Invoice</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Context action" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors rounded-full"><span class="material-symbols-outlined text-[22px]">more_vert</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-20 pb-safe bg-surface"><div class="flex flex-col w-full pb-24">
+<!-- Stepper Header Card -->
+<div class="px-margin pt-space-xs pb-space-md">
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between relative">
+<!-- Connecting Track Line -->
+<div class="absolute left-6 right-6 top-3 h-[2px] bg-surface-container-high -z-0"></div>
+<div class="absolute left-6 w-[20%] top-3 h-[2px] bg-primary -z-0 transition-all duration-300"></div>
+<!-- Step 1: Details (Active) -->
+<div class="flex flex-col items-center gap-1.5 z-10">
+<div class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-sm text-label-sm font-bold shadow-sm">
+            1
+          </div>
+<span class="font-label-md text-label-md text-on-surface font-semibold">Details</span>
+</div>
+<!-- Step 2: Items (Inactive) -->
+<div class="flex flex-col items-center gap-1.5 z-10">
+<div class="w-6 h-6 rounded-full bg-surface-container-lowest text-secondary flex items-center justify-center font-label-sm text-label-sm font-medium shadow-[inset_0_0_0_1.5px_#c4c7c7]">
+            2
+          </div>
+<span class="font-label-md text-label-md text-secondary font-medium">Items</span>
+</div>
+<!-- Step 3: Review (Inactive) -->
+<div class="flex flex-col items-center gap-1.5 z-10">
+<div class="w-6 h-6 rounded-full bg-surface-container-lowest text-secondary flex items-center justify-center font-label-sm text-label-sm font-medium shadow-[inset_0_0_0_1.5px_#c4c7c7]">
+            3
+          </div>
+<span class="font-label-md text-label-md text-secondary font-medium">Review</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Form Body -->
+<div class="px-margin flex flex-col gap-space-lg">
+<!-- Group: Invoice Details -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Invoice Details</h2>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container-low px-2 py-0.5 rounded font-medium">Auto Numbering</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<!-- Invoice No Input -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-medium flex items-center gap-1">
+            Invoice No. <span class="text-error font-bold">*</span>
+</label>
+<div class="h-[46px] px-3 bg-surface-container-low rounded-lg flex items-center justify-between shadow-[inset_0_0_0_1px_#e2e2e2] focus-within:shadow-[inset_0_0_0_2px_#000000] transition-shadow">
+<input class="w-full bg-transparent font-body-md text-body-md text-on-surface font-semibold outline-none tracking-wide" id="invoiceNo" placeholder="e.g. INV-001" type="text" value="GST/26-27/032"/>
+<span class="material-symbols-outlined text-[18px] text-secondary">tag</span>
+</div>
+</div>
+<!-- Invoice Date Input -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-medium flex items-center gap-1">
+            Invoice Date <span class="text-error font-bold">*</span>
+</label>
+<div class="h-[46px] px-3 bg-surface-container-low rounded-lg flex items-center justify-between shadow-[inset_0_0_0_1px_#e2e2e2] focus-within:shadow-[inset_0_0_0_2px_#000000] cursor-pointer transition-shadow">
+<input class="w-full bg-transparent font-body-md text-body-md text-on-surface outline-none cursor-pointer" id="invoiceDate" readonly="" type="text" value="22-Nov-2026"/>
+<span class="material-symbols-outlined text-[20px] text-secondary">calendar_today</span>
+</div>
+</div>
+<!-- Tax Type Dropdown -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-medium flex items-center gap-1">
+            Tax Type <span class="text-error font-bold">*</span>
+</label>
+<div class="relative">
+<select class="w-full h-[46px] px-3 pr-10 bg-surface-container-low rounded-lg font-body-md text-body-md text-on-surface outline-none shadow-[inset_0_0_0_1px_#e2e2e2] focus:shadow-[inset_0_0_0_2px_#000000] appearance-none cursor-pointer transition-shadow">
+<option selected="" value="igst">IGST (Inter-state)</option>
+<option value="cgst_sgst">CGST + SGST (Intra-state)</option>
+<option value="export">Export / Zero Rated</option>
+<option value="exempted">Exempted / Nil Rated</option>
+</select>
+<span class="material-symbols-outlined text-[20px] text-secondary absolute right-3 top-1/2 -translate-y-1/2 pointer-events-none">
+              expand_more
+            </span>
+</div>
+</div>
+</div>
+</section>
+<!-- Group: Seller (From) -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Seller (From)</h2>
+<button class="font-label-md text-label-md text-on-surface font-semibold underline underline-offset-2" type="button">Change</button>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm active:bg-surface-container-low transition-colors cursor-pointer flex items-center justify-between group">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">apartment</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold truncate">Mahadev Tech Engineering</span>
+<span class="font-body-sm text-body-sm text-secondary truncate">Karnataka (Code: 29) • 29DCIPR3153L1Z0</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[20px] text-secondary group-hover:translate-x-0.5 transition-transform flex-shrink-0">
+          chevron_right
+        </span>
+</div>
+</section>
+<!-- Group: Buyer (Bill To) -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Buyer (Bill To)</h2>
+<button class="font-label-md text-label-md text-on-surface font-semibold underline underline-offset-2" type="button">Select Other</button>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm active:bg-surface-container-low transition-colors cursor-pointer flex items-center justify-between group">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface flex-shrink-0">
+<span class="material-symbols-outlined text-[22px]">domain</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-lg text-label-lg text-on-surface font-semibold truncate">Tech Force Composites Pvt Ltd</span>
+<span class="font-body-sm text-body-sm text-secondary truncate">Goa (Code: 30) • 30AACT20876M1Z4</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[20px] text-secondary group-hover:translate-x-0.5 transition-transform flex-shrink-0">
+          chevron_right
+        </span>
+</div>
+</section>
+<!-- Group: Delivery & Reference (Collapsible / Compact) -->
+<section class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Delivery &amp; Reference</h2>
+<span class="font-label-sm text-label-sm text-secondary">Optional</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-md">
+<!-- Buyer Order No & Date Grid -->
+<div class="grid grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5 min-w-0">
+<label class="font-label-md text-label-md text-on-surface font-medium truncate">Buyer Order No.</label>
+<div class="h-[46px] px-3 bg-surface-container-low rounded-lg flex items-center shadow-[inset_0_0_0_1px_#e2e2e2] focus-within:shadow-[inset_0_0_0_2px_#000000]">
+<input class="w-full bg-transparent font-body-md text-body-md text-on-surface outline-none" placeholder="PO-0000" type="text" value="GOA/26401058"/>
+</div>
+</div>
+<div class="flex flex-col gap-1.5 min-w-0">
+<label class="font-label-md text-label-md text-on-surface font-medium truncate">Order Date</label>
+<div class="h-[46px] px-3 bg-surface-container-low rounded-lg flex items-center justify-between shadow-[inset_0_0_0_1px_#e2e2e2] focus-within:shadow-[inset_0_0_0_2px_#000000]">
+<input class="w-full bg-transparent font-body-md text-body-md text-on-surface outline-none" placeholder="DD-Mon-YY" type="text" value="06-Nov-26"/>
+<span class="material-symbols-outlined text-[18px] text-secondary flex-shrink-0">event</span>
+</div>
+</div>
+</div>
+<!-- Delivery Note & Dispatch Through -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-md text-label-md text-on-surface font-medium">Delivery Note / Challan</label>
+<div class="h-[46px] px-3 bg-surface-container-low rounded-lg flex items-center shadow-[inset_0_0_0_1px_#e2e2e2] focus-within:shadow-[inset_0_0_0_2px_#000000]">
+<input class="w-full bg-transparent font-body-md text-body-md text-on-surface outline-none" placeholder="e.g. DN-2026/894" type="text"/>
+</div>
+</div>
+<!-- Dispatch Through & Destination -->
+<div class="grid grid-cols-2 gap-space-md">
+<div class="flex flex-col gap-1.5 min-w-0">
+<label class="font-label-md text-label-md text-on-surface font-medium truncate">Dispatch Mode</label>
+<div class="h-[46px] px-3 bg-surface-container-low rounded-lg flex items-center shadow-[inset_0_0_0_1px_#e2e2e2] focus-within:shadow-[inset_0_0_0_2px_#000000]">
+<input class="w-full bg-transparent font-body-md text-body-md text-on-surface outline-none" placeholder="Transport" type="text" value="Surface Cargo"/>
+</div>
+</div>
+<div class="flex flex-col gap-1.5 min-w-0">
+<label class="font-label-md text-label-md text-on-surface font-medium truncate">Destination</label>
+<div class="h-[46px] px-3 bg-surface-container-low rounded-lg flex items-center shadow-[inset_0_0_0_1px_#e2e2e2] focus-within:shadow-[inset_0_0_0_2px_#000000]">
+<input class="w-full bg-transparent font-body-md text-body-md text-on-surface outline-none" placeholder="City / Hub" type="text" value="Verna, Goa"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Operational State Info Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex items-start gap-space-sm text-secondary">
+<span class="material-symbols-outlined text-[18px] text-on-surface mt-0.5">verified_user</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+        GST validation and tax split (IGST 18%) configured automatically based on Seller <span class="font-semibold text-on-surface">(KA-29)</span> and Buyer <span class="font-semibold text-on-surface">(GA-30)</span> locations.
+      </p>
+</div>
+</div>
+<!-- Sticky Bottom Navigation Footer Shelf -->
+<div class="fixed bottom-0 left-0 right-0 z-40 bg-surface-container-lowest/95 backdrop-blur-md px-margin py-3 shadow-[0_-4px_16px_rgba(0,0,0,0.04)] pb-safe">
+<div class="max-w-md mx-auto flex items-center gap-space-md">
+<button class="h-12 px-5 bg-surface-container-low hover:bg-surface-container rounded-lg text-on-surface font-label-lg text-label-lg font-semibold flex items-center justify-center transition-colors" onclick="history.back()" type="button">
+        Cancel
+      </button>
+<button class="flex-1 h-12 bg-primary active:bg-neutral-800 text-on-primary rounded-lg font-label-lg text-label-lg font-semibold flex items-center justify-center gap-space-sm shadow-[0_2px_8px_rgba(0,0,0,0.16)] transition-all active:scale-[0.99]" id="btnNextStep" type="button">
+<span>Next</span>
+<span class="material-symbols-outlined text-[20px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  // Simple interactive feedback for Next action
+  document.getElementById('btnNextStep')?.addEventListener('click', function() {
+    const originalContent = this.innerHTML;
+    this.innerHTML = `
+      <span class="material-symbols-outlined text-[20px] animate-spin">progress_activity</span>
+      <span>Saving Details...</span>
+    `;
+    setTimeout(() => {
+      this.innerHTML = originalContent;
+      // In production stack, this shifts to Step 2: Add Items
+    }, 450);
+  });
+</script></main></body></html>

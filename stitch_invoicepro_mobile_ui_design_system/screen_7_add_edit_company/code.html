@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><title>InvoicePro</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container": "#eeeeee", "on-secondary-fixed-variant": "#46464e", "inverse-surface": "#2f3131", "tertiary": "#000000", "surface-tint": "#5f5e5e", "background": "#f9f9f9", "on-tertiary-fixed": "#191c1f", "surface-container-high": "#e8e8e8", "tertiary-fixed": "#e0e2e6", "on-tertiary-fixed-variant": "#44474a", "secondary": "#5d5e66", "on-primary-fixed": "#1c1b1b", "surface-container-highest": "#e2e2e2", "tertiary-container": "#191c1f", "on-primary": "#ffffff", "tertiary-fixed-dim": "#c4c7ca", "inverse-on-surface": "#f0f1f1", "outline": "#747878", "on-secondary-fixed": "#1a1b22", "on-error-container": "#93000a", "inverse-primary": "#c8c6c5", "surface-dim": "#dadada", "on-secondary": "#ffffff", "primary-fixed": "#e5e2e1", "surface-container-lowest": "#ffffff", "outline-variant": "#c4c7c7", "on-surface": "#1a1c1c", "surface-container-low": "#f3f3f4", "primary-container": "#1c1b1b", "primary-fixed-dim": "#c8c6c5", "secondary-fixed-dim": "#c6c5cf", "on-tertiary": "#ffffff", "error-container": "#ffdad6", "surface-bright": "#f9f9f9", "on-surface-variant": "#444748", "on-primary-container": "#858383", "on-error": "#ffffff", "on-secondary-container": "#63646c", "error": "#ba1a1a", "primary": "#000000", "surface-variant": "#e2e2e2", "on-primary-fixed-variant": "#474646", "secondary-container": "#e3e1ec", "on-tertiary-container": "#818488", "on-background": "#1a1c1c", "surface": "#f9f9f9", "secondary-fixed": "#e3e1ec" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-md": "0.75rem", "space-xl": "1.5rem", "margin": "1rem", "space-lg": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "gutter": "0.75rem" }, fontFamily: { "label-md": ["Inter"], "body-sm": ["Inter"], "body-md": ["Inter"], "label-lg": ["Inter"], "headline-sm": ["Inter"], "headline-md": ["Inter"], "headline-lg": ["Inter"], "label-sm": ["Inter"], "body-lg": ["Inter"] }, fontSize: { "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" }], "body-lg": ["15px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "500" }] } } } }</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}.pb-safe{padding-bottom:max(env(safe-area-inset-bottom,0px),1rem);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-background font-body-md text-body-md text-on-background antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-6 px-margin flex items-center justify-between text-on-surface select-none"><span class="font-label-sm text-label-sm font-semibold tracking-tight">9:41</span><div class="flex items-center gap-space-xs text-on-surface"><span class="material-symbols-outlined text-[15px]">signal_cellular_alt</span><span class="material-symbols-outlined text-[15px]">wifi</span><span class="material-symbols-outlined text-[15px]">battery_full</span></div></div><div class="h-14 px-margin flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Go back" class="w-11 h-11 -ml-2 flex items-center justify-center text-on-surface hover:text-on-surface-variant transition-colors rounded-full" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="InvoicePro Logo" class="h-7 w-auto object-contain hidden" src="https://lh3.googleusercontent.com/aida/ALJJyrCWWQC7XYThF5m37nV7bn_CVCTJ3maSoJZ1PS3bYC5z6sJMjz0bQVcHdqnhkjoIU0wsXbAtHaqf9Mk6Tidy2cebhbBl-VwbOSThfcSkYj6lLsYoiO2BAMMz8P-MDQa7Gi0I1Wno321bNcQXC_qmPOQRGcP2CzIJuMv_8w_A3ZGFWEZWq7gjBP1jIOLo5V1aSAwlPzuCD3ZrXAxhiSacDvOhJJGJhnCvVxixsisJhi1h"/><h1 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight truncate max-w-[200px]">Add Item</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Context action" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors rounded-full"><span class="material-symbols-outlined text-[22px]">more_vert</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-20 pb-safe bg-surface"><div class="flex flex-col w-full pb-24">
+<!-- Content Area -->
+<div class="px-margin flex flex-col space-y-space-md pt-space-xs">
+<!-- Business Role Toggle Segment -->
+<div class="bg-surface-container-low p-1 rounded-lg flex items-center justify-between gap-1 shadow-sm">
+<button class="flex-1 py-2 px-space-sm rounded text-center font-label-md text-label-md transition-all duration-150 flex items-center justify-center gap-1.5 text-on-surface-variant hover:text-on-surface" id="btn-seller" onclick="selectRole('seller')" type="button">
+<span class="material-symbols-outlined text-[18px]">storefront</span>
+<span>Seller (My Business)</span>
+</button>
+<button class="flex-1 py-2 px-space-sm rounded text-center font-label-md text-label-md transition-all duration-150 flex items-center justify-center gap-1.5 bg-primary text-on-primary shadow-sm font-semibold" id="btn-buyer" onclick="selectRole('buyer')" type="button">
+<span class="material-symbols-outlined text-[18px]">business</span>
+<span>Customer / Buyer</span>
+</button>
+</div>
+<!-- Company Form Container -->
+<form class="flex flex-col space-y-space-md" id="company-form" onsubmit="event.preventDefault(); handleSave();">
+<!-- Company Name Field -->
+<div class="flex flex-col space-y-1">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-0.5" for="company-name">
+          Company Name <span class="text-on-surface font-bold">*</span>
+</label>
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm flex items-center px-space-md h-12 focus-within:bg-surface-container-high transition-colors">
+<input class="w-full bg-transparent text-on-surface font-body-md text-body-md focus:outline-none placeholder:text-outline" id="company-name" name="companyName" placeholder="Enter registered business name" required="" type="text" value="Tech Force Composites Pvt Ltd"/>
+</div>
+</div>
+<!-- GSTIN / UIN & Fast Autofill Tag -->
+<div class="flex flex-col space-y-1">
+<div class="flex items-center justify-between">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-0.5" for="gstin">
+            GSTIN / UIN <span class="text-on-surface font-bold">*</span>
+</label>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">15-digit code</span>
+</div>
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm flex items-center px-space-md h-12 focus-within:bg-surface-container-high transition-colors">
+<input class="w-full bg-transparent text-on-surface font-body-md text-body-md uppercase font-semibold focus:outline-none placeholder:text-outline tracking-wider" id="gstin" maxlength="15" name="gstin" placeholder="22AAAAA0000A1Z5" required="" type="text" value="30AACT20876M1Z4"/>
+<button class="text-on-surface flex items-center p-1 rounded hover:bg-surface-container" onclick="verifyGstin()" title="Verify GSTIN" type="button">
+<span class="material-symbols-outlined text-[20px]">verified</span>
+</button>
+</div>
+</div>
+<!-- Contact Info Section: Phone & Email Split -->
+<div class="flex flex-col space-y-space-md">
+<!-- Phone Number -->
+<div class="flex flex-col space-y-1">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-0.5" for="phone">
+            Phone Number <span class="text-on-surface font-bold">*</span>
+</label>
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm flex items-center px-space-md h-12 focus-within:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-outline text-[18px] mr-2">phone</span>
+<input class="w-full bg-transparent text-on-surface font-body-md text-body-md focus:outline-none placeholder:text-outline" id="phone" name="phone" placeholder="+91 9876543210" required="" type="tel" value="+91 9822154320"/>
+</div>
+</div>
+<!-- Email Address -->
+<div class="flex flex-col space-y-1">
+<label class="font-label-md text-label-md text-on-surface" for="email">
+            Email Address
+          </label>
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm flex items-center px-space-md h-12 focus-within:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-outline text-[18px] mr-2">mail</span>
+<input class="w-full bg-transparent text-on-surface font-body-md text-body-md focus:outline-none placeholder:text-outline" id="email" name="email" placeholder="finance@company.com" type="email" value="accounts@techforce.co.in"/>
+</div>
+</div>
+</div>
+<!-- Registered Address Field -->
+<div class="flex flex-col space-y-1">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-0.5" for="address">
+          Registered Address <span class="text-on-surface font-bold">*</span>
+</label>
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm p-space-sm focus-within:bg-surface-container-high transition-colors">
+<textarea class="w-full bg-transparent text-on-surface font-body-md text-body-md focus:outline-none placeholder:text-outline resize-none leading-relaxed" id="address" name="address" placeholder="Premises name, street, taluka, city &amp; PIN" required="" rows="3">Plot No 48A, Survey No 73, Village Sao Jose De Areal, Salcete, Goa</textarea>
+</div>
+</div>
+<!-- State & Code Field (Selector) -->
+<div class="flex flex-col space-y-1">
+<label class="font-label-md text-label-md text-on-surface flex items-center gap-0.5" for="state-code">
+          State &amp; Code <span class="text-on-surface font-bold">*</span>
+</label>
+<div class="relative bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm flex items-center px-space-md h-12 focus-within:bg-surface-container-high transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-outline text-[20px] mr-2">location_on</span>
+<select class="w-full bg-transparent text-on-surface font-body-md text-body-md appearance-none focus:outline-none pr-8 cursor-pointer z-10" id="state-code" name="stateCode" required="">
+<option value="30">Goa (Code: 30)</option>
+<option value="29">Karnataka (Code: 29)</option>
+<option value="27">Maharashtra (Code: 27)</option>
+<option value="24">Gujarat (Code: 24)</option>
+<option value="33">Tamil Nadu (Code: 33)</option>
+<option value="07">Delhi (Code: 07)</option>
+</select>
+<span class="material-symbols-outlined text-on-surface-variant absolute right-3 pointer-events-none text-[20px]">keyboard_arrow_down</span>
+</div>
+</div>
+<!-- Bank Details Accordion/Container -->
+<div class="bg-surface-container-low rounded-lg p-space-md shadow-sm space-y-space-md">
+<div class="flex items-center justify-between pb-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface text-[20px]">account_balance</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Banking Details</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase bg-surface-container px-2 py-0.5 rounded">Optional</span>
+</div>
+<!-- Bank Name -->
+<div class="flex flex-col space-y-1">
+<label class="font-label-md text-label-md text-on-surface-variant" for="bank-name">Bank Name</label>
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm flex items-center px-space-md h-11 focus-within:bg-surface-container-high transition-colors">
+<input class="w-full bg-transparent text-on-surface font-body-md text-body-md focus:outline-none placeholder:text-outline" id="bank-name" name="bankName" placeholder="e.g. State Bank of India" type="text" value="HDFC Bank Ltd"/>
+</div>
+</div>
+<!-- Account Number & IFSC -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div class="flex flex-col space-y-1">
+<label class="font-label-md text-label-md text-on-surface-variant" for="account-no">Account Number</label>
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm flex items-center px-space-md h-11 focus-within:bg-surface-container-high transition-colors">
+<input class="w-full bg-transparent text-on-surface font-body-md text-body-md focus:outline-none placeholder:text-outline font-mono text-xs tracking-wider" id="account-no" name="accountNumber" placeholder="Account number" type="text" value="50200024881902"/>
+</div>
+</div>
+<div class="flex flex-col space-y-1">
+<label class="font-label-md text-label-md text-on-surface-variant" for="ifsc">IFSC Code</label>
+<div class="bg-surface-container-lowest rounded-lg overflow-hidden shadow-sm flex items-center px-space-md h-11 focus-within:bg-surface-container-high transition-colors">
+<input class="w-full bg-transparent text-on-surface font-body-md text-body-md uppercase font-semibold focus:outline-none placeholder:text-outline tracking-wider" id="ifsc" name="ifsc" placeholder="HDFC0000123" type="text" value="HDFC0000214"/>
+</div>
+</div>
+</div>
+</div>
+</form>
+</div>
+<!-- Sticky Bottom Footer Button -->
+<div class="fixed bottom-0 left-0 right-0 p-margin bg-surface/95 backdrop-blur-md shadow-[0_-4px_16px_rgba(0,0,0,0.06)] z-40 max-w-screen-md mx-auto">
+<button class="w-full h-12 bg-primary text-on-primary rounded-lg font-label-lg text-label-lg flex items-center justify-center gap-2 active:bg-neutral-800 transition-colors shadow-sm cursor-pointer" form="company-form" type="submit">
+<span class="material-symbols-outlined text-[20px]">check</span>
+<span>Save Company</span>
+</button>
+</div>
+</div>
+<script>
+  function selectRole(role) {
+    const btnSeller = document.getElementById('btn-seller');
+    const btnBuyer = document.getElementById('btn-buyer');
+
+    if (role === 'seller') {
+      btnSeller.className = 'flex-1 py-2 px-space-sm rounded text-center font-label-md text-label-md transition-all duration-150 flex items-center justify-center gap-1.5 bg-primary text-on-primary shadow-sm font-semibold';
+      btnBuyer.className = 'flex-1 py-2 px-space-sm rounded text-center font-label-md text-label-md transition-all duration-150 flex items-center justify-center gap-1.5 text-on-surface-variant hover:text-on-surface';
+    } else {
+      btnBuyer.className = 'flex-1 py-2 px-space-sm rounded text-center font-label-md text-label-md transition-all duration-150 flex items-center justify-center gap-1.5 bg-primary text-on-primary shadow-sm font-semibold';
+      btnSeller.className = 'flex-1 py-2 px-space-sm rounded text-center font-label-md text-label-md transition-all duration-150 flex items-center justify-center gap-1.5 text-on-surface-variant hover:text-on-surface';
+    }
+  }
+
+  function verifyGstin() {
+    const gstin = document.getElementById('gstin').value.trim();
+    if (gstin.length >= 2) {
+      const code = gstin.substring(0, 2);
+      const stateSelect = document.getElementById('state-code');
+      for (let i = 0; i < stateSelect.options.length; i++) {
+        if (stateSelect.options[i].value === code) {
+          stateSelect.selectedIndex = i;
+          break;
+        }
+      }
+    }
+  }
+
+  function handleSave() {
+    const submitBtn = document.querySelector('button[form="company-form"]');
+    const originalContent = submitBtn.innerHTML;
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[20px]">progress_activity</span><span>Saving...</span>';
+    
+    setTimeout(() => {
+      submitBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]">done_all</span><span>Saved Successfully</span>';
+      setTimeout(() => {
+        if (window.history && window.history.length > 1) {
+          window.history.back();
+        } else {
+          submitBtn.innerHTML = originalContent;
+          submitBtn.disabled = false;
+        }
+      }, 700);
+    }, 600);
+  }
+</script></main></body></html>

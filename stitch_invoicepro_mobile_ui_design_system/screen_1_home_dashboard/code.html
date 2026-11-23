@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>InvoicePro</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container": "#eeeeee", "on-secondary-fixed-variant": "#46464e", "inverse-surface": "#2f3131", "tertiary": "#000000", "surface-tint": "#5f5e5e", "background": "#f9f9f9", "on-tertiary-fixed": "#191c1f", "surface-container-high": "#e8e8e8", "tertiary-fixed": "#e0e2e6", "on-tertiary-fixed-variant": "#44474a", "secondary": "#5d5e66", "on-primary-fixed": "#1c1b1b", "surface-container-highest": "#e2e2e2", "tertiary-container": "#191c1f", "on-primary": "#ffffff", "tertiary-fixed-dim": "#c4c7ca", "inverse-on-surface": "#f0f1f1", "outline": "#747878", "on-secondary-fixed": "#1a1b22", "on-error-container": "#93000a", "inverse-primary": "#c8c6c5", "surface-dim": "#dadada", "on-secondary": "#ffffff", "primary-fixed": "#e5e2e1", "surface-container-lowest": "#ffffff", "outline-variant": "#c4c7c7", "on-surface": "#1a1c1c", "surface-container-low": "#f3f3f4", "primary-container": "#1c1b1b", "primary-fixed-dim": "#c8c6c5", "secondary-fixed-dim": "#c6c5cf", "on-tertiary": "#ffffff", "error-container": "#ffdad6", "surface-bright": "#f9f9f9", "on-surface-variant": "#444748", "on-primary-container": "#858383", "on-error": "#ffffff", "on-secondary-container": "#63646c", "error": "#ba1a1a", "primary": "#000000", "surface-variant": "#e2e2e2", "on-primary-fixed-variant": "#474646", "secondary-container": "#e3e1ec", "on-tertiary-container": "#818488", "on-background": "#1a1c1c", "surface": "#f9f9f9", "secondary-fixed": "#e3e1ec" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-md": "0.75rem", "space-xl": "1.5rem", "margin": "1rem", "space-lg": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "gutter": "0.75rem" }, fontFamily: { "label-md": ["Inter"], "body-sm": ["Inter"], "body-md": ["Inter"], "label-lg": ["Inter"], "headline-sm": ["Inter"], "headline-md": ["Inter"], "headline-lg": ["Inter"], "label-sm": ["Inter"], "body-lg": ["Inter"] }, fontSize: { "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "500" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-sm": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.03em", "fontWeight": "600" }], "body-lg": ["15px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "500" }] } } } }</script><style>@layer base{html,body{width:100%;margin:0;padding:0;min-height:100%;}.pb-safe{padding-bottom:max(env(safe-area-inset-bottom,0px),0.75rem);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-background font-body-md text-body-md text-on-background antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] pt-safe"><div class="h-6 px-margin flex items-center justify-between text-on-surface select-none"><span class="font-label-sm text-label-sm font-semibold tracking-tight">9:41</span><div class="flex items-center gap-space-xs text-on-surface"><span class="material-symbols-outlined text-[15px]">signal_cellular_alt</span><span class="material-symbols-outlined text-[15px]">wifi</span><span class="material-symbols-outlined text-[15px]">battery_full</span></div></div><div class="h-14 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="InvoicePro Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrCWWQC7XYThF5m37nV7bn_CVCTJ3maSoJZ1PS3bYC5z6sJMjz0bQVcHdqnhkjoIU0wsXbAtHaqf9Mk6Tidy2cebhbBl-VwbOSThfcSkYj6lLsYoiO2BAMMz8P-MDQa7Gi0I1Wno321bNcQXC_qmPOQRGcP2CzIJuMv_8w_A3ZGFWEZWq7gjBP1jIOLo5V1aSAwlPzuCD3ZrXAxhiSacDvOhJJGJhnCvVxixsisJhi1h"/><div class="flex flex-col"><span class="font-label-sm text-label-sm tracking-widest uppercase text-on-surface-variant leading-none">InvoicePro</span><h1 class="font-headline-sm text-headline-sm text-on-surface font-semibold tracking-tight">Home</h1></div></div><div class="flex items-center gap-space-sm"><button aria-label="Search" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-on-surface transition-colors rounded-full"><span class="material-symbols-outlined text-[22px]">search</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-20 pb-24 bg-surface"><div class="flex flex-col w-full px-margin pb-20 select-none">
+<!-- Top Greeting & Period Filter Row -->
+<div class="flex items-center justify-between gap-space-sm pt-space-xs mb-space-md">
+<div class="flex flex-col min-w-0 pr-space-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Good Morning,</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight truncate">Mahadev Tech Engineering</h2>
+</div>
+<div class="relative shrink-0">
+<button class="flex items-center gap-1 bg-surface-container-high text-on-surface px-3 py-1.5 rounded-full text-label-sm font-label-sm font-semibold active:bg-surface-container-highest transition-colors" id="periodSelectorBtn">
+<span id="currentPeriodLabel">This Month</span>
+<span class="material-symbols-outlined text-[16px] leading-none text-on-surface-variant">keyboard_arrow_down</span>
+</button>
+<!-- Dropdown Popup -->
+<div class="hidden absolute right-0 mt-1.5 w-36 bg-surface-container-lowest rounded-lg shadow-xl z-20 py-1 flex flex-col" id="periodDropdown">
+<button class="period-opt px-3 py-2 text-left font-label-md text-label-md text-on-surface hover:bg-surface-container-low transition-colors" data-value="This Month">This Month</button>
+<button class="period-opt px-3 py-2 text-left font-label-md text-label-md text-on-surface hover:bg-surface-container-low transition-colors" data-value="Last Month">Last Month</button>
+<button class="period-opt px-3 py-2 text-left font-label-md text-label-md text-on-surface hover:bg-surface-container-low transition-colors" data-value="Q3 FY26">Q3 FY26</button>
+<button class="period-opt px-3 py-2 text-left font-label-md text-label-md text-on-surface hover:bg-surface-container-low transition-colors" data-value="FY 2026-27">FY 2026-27</button>
+</div>
+</div>
+</div>
+<!-- Metric Summary Cards Row (Monochrome Functional 3-Card Split) -->
+<div class="grid grid-cols-3 gap-gutter mb-space-lg">
+<!-- Card 1: Invoices Count -->
+<div class="bg-surface-container-lowest rounded-lg p-space-sm flex flex-col justify-between shadow-sm active:scale-[0.98] transition-transform">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Invoices</span>
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">receipt_long</span>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md text-on-surface font-bold tracking-tight">128</span>
+</div>
+<div class="flex items-center gap-0.5 text-on-surface-variant mt-1">
+<span class="material-symbols-outlined text-[11px]">arrow_upward</span>
+<span class="font-label-sm text-[10px] leading-tight">+14% vs lm</span>
+</div>
+</div>
+<!-- Card 2: Total Sales -->
+<div class="bg-surface-container-lowest rounded-lg p-space-sm flex flex-col justify-between shadow-sm active:scale-[0.98] transition-transform">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">Total Sales</span>
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">currency_rupee</span>
+</div>
+<div class="flex items-baseline truncate">
+<span class="font-label-lg text-label-lg text-on-surface font-bold tracking-tight truncate">₹12,54,300</span>
+</div>
+<div class="flex items-center gap-0.5 text-on-surface-variant mt-1 truncate">
+<span class="material-symbols-outlined text-[11px]">trending_up</span>
+<span class="font-label-sm text-[10px] leading-tight truncate">Target: 82%</span>
+</div>
+</div>
+<!-- Card 3: Total GST -->
+<div class="bg-surface-container-lowest rounded-lg p-space-sm flex flex-col justify-between shadow-sm active:scale-[0.98] transition-transform">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">GST</span>
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">account_balance</span>
+</div>
+<div class="flex items-baseline truncate">
+<span class="font-label-lg text-label-lg text-on-surface font-bold tracking-tight truncate">₹1,91,742</span>
+</div>
+<div class="flex items-center gap-0.5 text-on-surface-variant mt-1 truncate">
+<span class="material-symbols-outlined text-[11px]">verified</span>
+<span class="font-label-sm text-[10px] leading-tight truncate">Matched GSTR-1</span>
+</div>
+</div>
+</div>
+<!-- Search & Inline Filter Toolbar -->
+<div class="flex items-center gap-space-sm mb-space-md">
+<div class="flex-1 flex items-center bg-surface-container-lowest rounded-lg px-3 h-[46px] shadow-sm focus-within:ring-2 focus-within:ring-primary transition-all">
+<span class="material-symbols-outlined text-outline text-[20px] mr-2">search</span>
+<input class="w-full bg-transparent font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant outline-none" id="invoiceSearchInput" placeholder="Search invoice no. or buyer..." type="text"/>
+<button class="hidden text-outline hover:text-on-surface p-1" id="clearSearchBtn">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<button aria-label="Filter Options" class="w-[46px] h-[46px] flex items-center justify-center bg-surface-container-lowest rounded-lg shadow-sm text-on-surface hover:bg-surface-container transition-colors active:scale-95 shrink-0" id="filterToggleBtn">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+<!-- Fast Filter Quick Chips (Scrollable horizontal row) -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 mb-space-md no-scrollbar">
+<button class="filter-chip bg-primary text-on-primary rounded-full px-3.5 py-1 text-label-md font-label-md whitespace-nowrap transition-colors active:scale-95" data-filter="all">
+      All (128)
+    </button>
+<button class="filter-chip bg-surface-container-lowest text-on-surface-variant hover:text-on-surface rounded-full px-3.5 py-1 text-label-md font-label-md whitespace-nowrap shadow-sm transition-colors active:scale-95" data-filter="paid">
+      Cleared
+    </button>
+<button class="filter-chip bg-surface-container-lowest text-on-surface-variant hover:text-on-surface rounded-full px-3.5 py-1 text-label-md font-label-md whitespace-nowrap shadow-sm transition-colors active:scale-95" data-filter="pending">
+      Pending
+    </button>
+<button class="filter-chip bg-surface-container-lowest text-on-surface-variant hover:text-on-surface rounded-full px-3.5 py-1 text-label-md font-label-md whitespace-nowrap shadow-sm transition-colors active:scale-95" data-filter="igst">
+      IGST (Inter-state)
+    </button>
+</div>
+<!-- Recent Invoices Header -->
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<h3 class="font-label-lg text-label-lg text-on-surface font-semibold tracking-tight">Recent Invoices</h3>
+<span class="bg-surface-container-high text-on-surface-variant text-[11px] font-semibold px-2 py-0.5 rounded-full" id="resultsBadge">3 shown</span>
+</div>
+<button class="font-label-md text-label-md text-on-surface font-semibold hover:underline flex items-center gap-0.5" id="viewAllBtn">
+      View All
+      <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+<!-- Invoices List Container -->
+<div class="flex flex-col gap-gutter" id="invoiceList">
+<!-- Invoice Card 1 -->
+<div class="invoice-card bg-surface-container-lowest rounded-lg p-space-md shadow-sm active:bg-surface-container-low transition-colors cursor-pointer" data-amount="10077.00" data-buyer="Tech Force Composites Pvt Ltd" data-id="GST/26-27/031">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface shrink-0">
+<span class="material-symbols-outlined text-[20px]">description</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-on-surface font-bold tracking-tight">GST/26-27/031</span>
+<span class="bg-surface-container-high text-on-surface text-[10px] font-semibold px-1.5 py-0.2 rounded">IGST</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">Tech Force Composites Pvt Ltd</p>
+<span class="font-label-sm text-label-sm text-outline mt-1">06 Nov 2026</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">₹10,077.00</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1 flex items-center gap-1">
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-on-surface"></span>
+            Tax Invoice
+          </span>
+</div>
+</div>
+</div>
+<!-- Invoice Card 2 -->
+<div class="invoice-card bg-surface-container-lowest rounded-lg p-space-md shadow-sm active:bg-surface-container-low transition-colors cursor-pointer" data-amount="8540.00" data-buyer="Kumar Engineering Works" data-id="GST/26-27/030">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface shrink-0">
+<span class="material-symbols-outlined text-[20px]">description</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-on-surface font-bold tracking-tight">GST/26-27/030</span>
+<span class="bg-surface-container-high text-on-surface text-[10px] font-semibold px-1.5 py-0.2 rounded">CGST+SGST</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">Kumar Engineering Works</p>
+<span class="font-label-sm text-label-sm text-outline mt-1">05 Nov 2026</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">₹8,540.00</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1 flex items-center gap-1">
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-on-surface"></span>
+            Tax Invoice
+          </span>
+</div>
+</div>
+</div>
+<!-- Invoice Card 3 -->
+<div class="invoice-card bg-surface-container-lowest rounded-lg p-space-md shadow-sm active:bg-surface-container-low transition-colors cursor-pointer" data-amount="15200.00" data-buyer="Shree Carbon Factory" data-id="GST/26-27/029">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface shrink-0">
+<span class="material-symbols-outlined text-[20px]">description</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-lg text-label-lg text-on-surface font-bold tracking-tight">GST/26-27/029</span>
+<span class="bg-surface-container-high text-on-surface text-[10px] font-semibold px-1.5 py-0.2 rounded">IGST</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">Shree Carbon Factory</p>
+<span class="font-label-sm text-label-sm text-outline mt-1">04 Nov 2026</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">₹15,200.00</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1 flex items-center gap-1">
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-on-surface"></span>
+            Tax Invoice
+          </span>
+</div>
+</div>
+</div>
+</div>
+<!-- Dynamic Empty Search Result State -->
+<div class="hidden flex-col items-center justify-center py-12 text-center" id="emptySearchResults">
+<div class="w-14 h-14 rounded-full bg-surface-container-low flex items-center justify-center text-outline mb-3">
+<span class="material-symbols-outlined text-[28px]">search_off</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold">No invoices match your query</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 max-w-[220px]">Try entering a buyer name, invoice number, or clear filters.</p>
+<button class="mt-4 px-4 py-2 bg-surface-container-high rounded-full font-label-md text-label-md text-on-surface font-semibold" id="resetSearchBtn">Clear Search</button>
+</div>
+<!-- Operational Quick Tips / Ledger Note Banner -->
+<div class="mt-space-lg bg-surface-container-low rounded-lg p-space-md flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest flex items-center justify-center text-on-surface shrink-0">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md text-on-surface font-semibold">E-Way Bill &amp; GST Compliance</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Auto-sequenced as per Central Tax Rule 46(b)</p>
+</div>
+</div>
+<!-- Floating Action Button (Create Invoice FAB) -->
+<div class="fixed bottom-20 right-4 z-40">
+<button aria-label="Create New Invoice" class="w-14 h-14 rounded-full bg-primary text-on-primary flex items-center justify-center shadow-[0px_4px_16px_rgba(0,0,0,0.30)] active:scale-90 transition-transform focus:outline-none" id="createInvoiceFab">
+<span class="material-symbols-outlined text-[28px] text-on-primary font-bold">add</span>
+</button>
+</div>
+<!-- Invoice Quick Actions Modal Drawer -->
+<div class="hidden fixed inset-0 z-50 bg-inverse-surface/40 flex items-end" id="quickActionDrawer">
+<div class="w-full bg-surface-container-lowest rounded-t-xl p-space-md flex flex-col gap-space-sm max-w-lg mx-auto shadow-2xl">
+<div class="w-12 h-1 bg-surface-container-highest rounded-full mx-auto mb-1"></div>
+<div class="flex items-center justify-between pb-2">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold" id="drawerInvoiceId">GST/26-27/031</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant" id="drawerBuyer">Tech Force Composites Pvt Ltd</span>
+</div>
+<button class="w-8 h-8 flex items-center justify-center rounded-full text-on-surface-variant hover:bg-surface-container-low" id="closeDrawerBtn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="grid grid-cols-3 gap-space-xs py-2">
+<button class="flex flex-col items-center justify-center p-3 rounded-lg bg-surface-container-low text-on-surface active:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[22px] mb-1">visibility</span>
+<span class="font-label-sm text-label-sm font-semibold">Preview</span>
+</button>
+<button class="flex flex-col items-center justify-center p-3 rounded-lg bg-surface-container-low text-on-surface active:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[22px] mb-1">share</span>
+<span class="font-label-sm text-label-sm font-semibold">Share PDF</span>
+</button>
+<button class="flex flex-col items-center justify-center p-3 rounded-lg bg-surface-container-low text-on-surface active:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[22px] mb-1">print</span>
+<span class="font-label-sm text-label-sm font-semibold">Print</span>
+</button>
+</div>
+<button class="w-full h-12 bg-primary text-on-primary rounded-lg font-label-lg text-label-lg font-semibold flex items-center justify-center gap-2 active:bg-primary/90 transition-colors" id="drawerEditBtn">
+<span class="material-symbols-outlined text-[20px]">edit_document</span>
+        Duplicate &amp; Create New
+      </button>
+</div>
+</div>
+</div>
+<script>
+  (function initDashboard() {
+    const searchInput = document.getElementById('invoiceSearchInput');
+    const clearBtn = document.getElementById('clearSearchBtn');
+    const resetSearchBtn = document.getElementById('resetSearchBtn');
+    const emptyState = document.getElementById('emptySearchResults');
+    const cards = Array.from(document.querySelectorAll('.invoice-card'));
+    const resultsBadge = document.getElementById('resultsBadge');
+    const periodBtn = document.getElementById('periodSelectorBtn');
+    const periodDropdown = document.getElementById('periodDropdown');
+    const currentPeriodLabel = document.getElementById('currentPeriodLabel');
+    const periodOptions = document.querySelectorAll('.period-opt');
+    const filterChips = document.querySelectorAll('.filter-chip');
+    const drawer = document.getElementById('quickActionDrawer');
+    const closeDrawerBtn = document.getElementById('closeDrawerBtn');
+    const drawerInvoiceId = document.getElementById('drawerInvoiceId');
+    const drawerBuyer = document.getElementById('drawerBuyer');
+    const fab = document.getElementById('createInvoiceFab');
+
+    // Period selector drop toggle
+    periodBtn?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      periodDropdown.classList.toggle('hidden');
+    });
+
+    document.addEventListener('click', () => {
+      periodDropdown?.classList.add('hidden');
+    });
+
+    periodOptions.forEach((opt) => {
+      opt.addEventListener('click', () => {
+        const val = opt.getAttribute('data-value');
+        if (currentPeriodLabel && val) {
+          currentPeriodLabel.textContent = val;
+        }
+        periodDropdown.classList.add('hidden');
+      });
+    });
+
+    // Real-time live filtering of invoice cards
+    function filterInvoices() {
+      const query = (searchInput?.value || '').toLowerCase().trim();
+      let visibleCount = 0;
+
+      cards.forEach((card) => {
+        const id = (card.getAttribute('data-id') || '').toLowerCase();
+        const buyer = (card.getAttribute('data-buyer') || '').toLowerCase();
+        const matches = id.includes(query) || buyer.includes(query);
+
+        if (matches) {
+          card.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      if (clearBtn) {
+        if (query.length > 0) {
+          clearBtn.classList.remove('hidden');
+        } else {
+          clearBtn.classList.add('hidden');
+        }
+      }
+
+      if (emptyState) {
+        if (visibleCount === 0) {
+          emptyState.classList.remove('hidden');
+          emptyState.classList.add('flex');
+        } else {
+          emptyState.classList.add('hidden');
+          emptyState.classList.remove('flex');
+        }
+      }
+
+      if (resultsBadge) {
+        resultsBadge.textContent = `${visibleCount} shown`;
+      }
+    }
+
+    searchInput?.addEventListener('input', filterInvoices);
+
+    clearBtn?.addEventListener('click', () => {
+      if (searchInput) {
+        searchInput.value = '';
+        filterInvoices();
+        searchInput.focus();
+      }
+    });
+
+    resetSearchBtn?.addEventListener('click', () => {
+      if (searchInput) {
+        searchInput.value = '';
+        filterInvoices();
+      }
+    });
+
+    // Category Filter Chips Selection
+    filterChips.forEach((chip) => {
+      chip.addEventListener('click', () => {
+        filterChips.forEach((c) => {
+          c.classList.remove('bg-primary', 'text-on-primary');
+          c.classList.add('bg-surface-container-lowest', 'text-on-surface-variant');
+        });
+        chip.classList.add('bg-primary', 'text-on-primary');
+        chip.classList.remove('bg-surface-container-lowest', 'text-on-surface-variant');
+      });
+    });
+
+    // Quick Action Drawer open on card tap
+    cards.forEach((card) => {
+      card.addEventListener('click', () => {
+        const id = card.getAttribute('data-id');
+        const buyer = card.getAttribute('data-buyer');
+        if (drawerInvoiceId) drawerInvoiceId.textContent = id;
+        if (drawerBuyer) drawerBuyer.textContent = buyer;
+        drawer?.classList.remove('hidden');
+      });
+    });
+
+    closeDrawerBtn?.addEventListener('click', () => {
+      drawer?.classList.add('hidden');
+    });
+
+    drawer?.addEventListener('click', (e) => {
+      if (e.target === drawer) {
+        drawer.classList.add('hidden');
+      }
+    });
+
+    // FAB feedback ripple effect simulation
+    fab?.addEventListener('click', () => {
+      const originalIcon = fab.innerHTML;
+      fab.innerHTML = `<span class="material-symbols-outlined text-[26px] animate-spin text-on-primary">progress_activity</span>`;
+      setTimeout(() => {
+        fab.innerHTML = originalIcon;
+      }, 500);
+    });
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(0,0,0,0.04)]" data-active-classes="text-primary font-semibold"><div class="flex justify-around items-center h-16 px-space-sm"><a aria-current="page" class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] h-12 transition-colors text-primary font-semibold" data-path="home" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm">Home</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="item-catalog" href="#"><span class="material-symbols-outlined text-[24px]">inventory_2</span><span class="font-label-sm text-label-sm">Item</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="company-profile" href="#"><span class="material-symbols-outlined text-[24px]">domain</span><span class="font-label-sm text-label-sm">Company</span></a><a class="flex flex-col items-center justify-center gap-space-xs min-w-[56px] h-12 text-on-surface-variant hover:text-on-surface transition-colors" data-path="settings" href="#"><span class="material-symbols-outlined text-[24px]">settings</span><span class="font-label-sm text-label-sm">Settings</span></a></div></nav></body></html>
